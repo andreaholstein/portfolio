@@ -1,0 +1,475 @@
+html, body {
+  width: 100%;
+  font-family: 'Manrope', sans-serif;
+  /* background-color: beige; */
+  background-image: linear-gradient(beige, #F7DFBA, #FFFFF0, #F7DFBA, #ABBF86);
+  /* darker beige #EEEEC7, dark blue #120931, sky blue  #8EF9F3,*/
+}
+body {
+  margin: 0;
+}
+.pageWrap {
+    margin: 0 4em;
+}
+#navbarMain {
+  float: right;
+}
+#navbar a {
+  padding: 0 10px;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+#navbar a:link {
+  color: #F7DFBA;
+}
+#navbar a:visited {
+  color: #ABBF86
+  text-decoration: line-through;
+}
+#navbar a:hover {
+  color: turquoise;
+  font-weight: bolder;
+  transform: scale(1.10);
+  transition: transform 150ms;
+}
+/* ^scaling not working yet */
+#navbar a:active {
+  color: yellow;
+  font-weight: bolder;
+}
+h2 {
+  padding: 0.75em 0.5em;
+}
+.header {
+  font-family: 'Roboto', sans-serif;
+  place-items: left;
+}
+
+/* -------------MAIN LOGO-------------- */
+
+/* .logoTable {
+  width: 100%;
+}
+.logoTable td {
+  width: 30%;
+  margin: calc(30%/6);
+} */
+/* ^^ OLD TABLE CENTERING */
+.logoTop {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+/* WORKS! */
+
+/* ----------ABOUT-------------- WORKS LEAVE IT ALONE */
+/* I lied, needs a media query that pops the profile pic above the text */
+.aboutSection {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.about {
+  border-radius: 1em;
+  padding: 1em;
+  font-size: 1fr;
+}
+.blurb {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.avatar {
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+}
+#profilePic {
+  border-radius: 40%;
+  /* responsive sizing? */
+}
+
+/* -------------SEE MY WORK---------------- */
+#jumpTo {
+  text-align: center;
+}
+#jumpTo a {
+  text-decoration: none;
+}
+#jumpTo button {
+  text-decoration-color: indigo;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-style: oblique;
+  border-radius: 25px;
+  background-color: yellow;
+  border: 4%;
+  border-style: none;
+  padding: 1.5% 3%;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  transition: all .2s ease-in-out;
+}
+#jumpTo:hover {
+  transform: scale(1.10);
+  transition: transform 250ms;
+}
+#jumpTo a:hover {
+  color: turquoise;
+  font-weight: bolder;
+}
+#jumpTo a:active {
+  color: indigo;
+  font-weight: bolder;
+}
+
+/* -----------------SKILLS------------------ */
+
+.skilsWrap {
+  margin: 5% 10%;
+}
+.skillsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+  background-color: inherit;
+  color: inherit;
+  margin: 2em 4em;
+}
+.box {
+  background-color: inherit;
+  color: #FFAFBC;
+  border-radius: 1%;
+  padding: 0.5em;
+  font-size: 1em;
+}
+.box:hover {
+  color: turquoise;
+  font-weight: bolder;
+}
+.q {
+  background-color: inherit;
+  color: #B981CC;
+  border-radius: 1%;
+  padding: 0.5em;
+  font-size: 1em;
+}
+.q:hover {
+  color: #FFFF4B;
+  font-weight: bolder;
+}
+.r {
+  background-color: inherit;
+  color: #F0A271;
+  border-radius: 1%;
+  padding: 0.5em;
+  font-size: 1em;
+}
+.r:hover {
+  color: #97C3E4;
+  font-weight: bolder;
+}
+.box i, .box p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+path.d {
+  stroke: #FFAFBC;
+}
+path.d:hover {
+  stroke: turquoise;
+}
+
+/* ----------------PROJECTS-------------------- */
+#projWrap {
+  width: auto;
+  display: grid;
+  place-items: center;
+}
+.projLink {
+  height: 25em;
+  padding: 4em;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  transition: all .2s ease-in-out;
+}
+.projLink:hover {
+  transform: scale(1.25);
+  transition: transform 250ms;
+}
+/* INDEX ^ */
+.brief {
+  padding-left: 2em;
+}
+.pageWrap2 {
+  margin: 1em 2em 4em 4em;
+}
+.fig {
+  height: 24em;
+}
+figcaption {
+  width: auto;
+  padding: 2em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin: 2em 3em 0;
+}
+.fig:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transition: transform 250ms;
+}
+.zooms input[type=checkbox] {
+  display: none;
+}
+.zooms img {
+  transition: transform 0.25s ease;
+  place-items: center;
+  cursor: zoom-in;
+}
+.zooms input[type=checkbox]:checked~img {
+  transform: scale(2);
+  cursor: zoom-out;
+  background-color: white;
+}
+label {
+  display: grid;
+  place-items: center;
+}
+.git {
+  height: 16em;
+  display: grid;
+  place-items: center;
+}
+/* ^^CRUCIAL^^ */
+
+/* -------------EXPERIENCE--------------- */
+#resume {
+  display: grid;
+  grid-gap: 0.5em;
+  text-align: left;
+  list-style-type: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  font-family: 'Manrope', sans-serif;
+  place-items: center;
+}
+#resume p {
+  font-weight: bold;
+  padding: 0;
+  margin-bottom: 0;
+}
+#resume small {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+}
+.codeCamp {
+  grid-column: 1;
+  grid-row: 1;
+}
+.uFor {
+  grid-column: 2;
+  grid-row: 2;
+}
+.colt {
+  grid-column: 3;
+  grid-row: 3;
+}
+.light {
+  grid-column: 3;
+  grid-row: 1;
+}
+.python {
+  grid-column: 4;
+  grid-row: 2;
+}
+.queens {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+/* .coffee {
+  grid-column: 1;
+  grid-row: 2;
+}
+.cat {
+  grid-column: 2;
+  grid-row: 1;
+}
+.blobs2 {
+  grid-column: 2;
+  grid-row: 3;
+}
+.face {
+  grid-column: 4;
+  grid-row: 3;
+}
+.heart {
+  grid-column: 4;
+  grid-row: 1;
+}
+.lips {
+  grid-column: 5;
+  grid-row: 2;
+} */
+
+/* ------------------CONTACT-------------------- */
+/* WORKS DON'T TOUCH - Media query to bump text above form? */
+
+.wrapper3 {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 2fr 1fr;
+  background-color: inherit;
+  margin: 40px 20px;
+}
+.linkedBox l {
+  grid-column: 1;
+  grid-row: 1;
+}
+.formBox f {
+  grid-column: 3;
+  grid-row: 1;
+}
+.contactForm {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* FIXED HALLELUJAH */
+.iconLink {
+  float: left;
+  color: #F7DFBA;
+}
+.iconLink:hover {
+  color: turquoise;
+}
+/* WORKS! */
+input, textarea {
+  border: 1fr;
+  border-style: none;
+  border-radius: 7.5px;
+  width: 500px;
+  height: 30px;
+  margin: 10px;
+  padding: 12px;
+}
+#message {
+  height: 150px;
+}
+#submit {
+  background: #F7DFBA;
+  border: none;
+  border-radius: 7.5px;
+  padding: 10px 10px;
+  font-size: 12px;
+  width: 100px;
+  margin: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-style: oblique;
+  transition: all .2s ease-in-out;
+}
+#submit:hover {
+  background: turquoise;
+  color: yellow;
+  font-weight: bolder;
+  transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transition: transform 250ms;
+}
+/* ----------BACK TO TOP ----------- */
+
+
+#upTop {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0; /* Place the button at the bottom of the page */
+  left: 0; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: transparent; /* Set a background color */
+  color: white; /* Text color */
+  font-weight: bold;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: none; /* Some padding */
+  border-radius: none; /* Rounded corners */
+  font-size: 14px; /* Increase font size */
+  display: block;
+  transform: translateY(50%);
+  opacity: 55%;
+  transition: all .2s ease-in-out;
+}
+#upTop:after {
+    content:'Back to Top!';
+    display: flex;
+    text-align: center;
+    align-items: center;
+    /* color: #fff; */
+    position: absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background: #F7DFBA;
+    border-radius: 60%;
+    opacity: 0;
+    transition: all 0.75s;
+    -webkit-transition: all 0.75s;
+}
+#upTop:hover:after {
+    opacity:1;
+    transform: scale(1.10); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transition: transform 250ms;
+}
+/* FULLY FXNAL! */
+
+/* ---------------FOOTER------------------- */
+
+.pageWrap {
+  min-height: 100%;
+  margin-bottom: -4em; /* must be the same height as footer */
+}
+.pageWrap:after {
+  content: "";
+  display: block;
+}
+footer, .pageWrap:after {
+  height: 4em; /* however tall you want the footer to be */
+}
+footer {
+  background-color: inherit;
+  text-align: center;
+  padding: 1px;
+  font-family: 'Roboto', sans-serif;
+  font-style: oblique;
+  color: beige;
+}
+footer:hover {
+  background-color: turquoise;
+  color: purple;
+}
+/* body margin: 0 fixed this to bottom finally */
+.spaceFiller {
+  height: 8em;
+}
+
+/* -----------FLEXSLIDER------------- */
+/* .flexslider {
+  grid-column-start: 1;
+  margin-left: 90px;
+  margin-right: 25px;
+  width: 20em;
+  height: 20em;
+  display: inline-block;
+  place-items: center;
+  background: none;
+  border: none;
+  box-shadow: none! important;
+}
+
+.slides img {
+  background-color: inherit;
+  object-fit: contain;
+  object-position: center;
+} */

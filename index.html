@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Andrea Holstein | Developer</title>
+    <!-- JQUERY -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-32x32.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@200&family=Manrope:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME ICONS -->
+    <script src="https://kit.fontawesome.com/fba28c6b3c.js" crossorigin="anonymous"></script>
+    <!-- DevIcons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+    <!-- FLEXSLIDER -->
+    <link rel="stylesheet" href="flexslider/flexslider.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="flexslider/jquery.flexslider.js"></script>
+    <!-- LOAD CAROUSEL -->
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "slide",
+          controlNav: false,
+          animationLoop: true,
+          slideshow: false,
+          asNavFor: '#slider',
+          itemWidth: 400,
+        });
+      });
+    </script>
+
+  </head>
+<!-- NECK -->
+
+  <body>
+    <div class="backToTop">
+      <button onclick="topFunction()" id="upTop" title="Go to top">
+        <img src="img/gplogo.png" alt="Button with the Developer's logo design, green and pink polygons with the A signature; click to go back to top"/>
+      </button>
+      <!-- ^^ WORKS HALLELUJAH! -->
+      <!-- <button id="upTop">
+            <a href="javascript:window.scrollTo(0,0);">
+              <img src="img/gplogo.png" alt="Button with the Developer's logo design, green and pink polygons with the A signature; click to go back to top"/>
+            </a>
+      </button> -->
+    <div>
+
+    <div class="pageWrap">
+      <!-- FOOTER FIXED DO NOT TOUCH -->
+                                    <!-- &#60;Portfolio&#62; = <Portfolio> use for section headers? -->
+
+      <section id="navbarMain">
+        <nav id="navbar">
+          <a href="#home-header">Home</a>
+          <a href="#about-header">About</a>
+          <a href="#skills-header">Skills</a>
+          <a href="#projects-header">Projects</a>
+          <a href="#experience-header">Experience</a>
+          <a href="#contact-header">Contact</a>
+        </nav>
+      </section>
+
+      <main class="main">
+        <section id="top">
+                                                  <!-- REDO THIS WITH GRID LAYOUT? -->
+          <div class="logoTop">
+              <object data="img/pinkgreenlogo.svg" width="550" height="550"/></object>
+          </div>
+          <!-- <div class="containLogo"><object data="img/pinkgreenlogo.svg" width="550" height="550"/></object></div> -->
+          <!-- <table class="logoTable">
+            <td class="spacer"></td>
+            <td>
+              <object data="img/pinkgreenlogo.svg" width="550" height="550"/></object>
+            </td>
+            <td class="spacer"></td>
+          </table> -->
+          <!-- ^^ OLD TABLE CENTERING -->
+        </section>
+
+        <section id="aboutMe">
+          <h2 id="about-header" class="header" alt="About me section">Hey, I'm Andrea &#62;</h2>
+            <!-- NEEDS MEDIA QUERY, POP PHOTO ABOVE TEXT WHEN SHRUNK -->
+            <div class="aboutSection">
+              <div class="about blurb">
+                <p>I'm a Toronto-based film &#38; tv actress, &#38; front-end web developer. I'm an alumna of UforChanges Graphic Design &#38; Web-development intensive, &#38; my design specialty is creating vibrant, responsive, easy-to-navigate web layouts.</p>
+                <p>As a tech specialist in the non-profit sector, I spend my days developing organizational tech strategies, &#38; toubleshooting issues that come up. Identifying platform navigation issues &#38; streamlining the user experience are at the heart of what I do, &#38; I apply this mindset to my design practices to create cozy scrollable, accessible content.</p>
+                <p>When I'm not buried in the latest audition (or java-) script, you can find me perfecting my spaghetti sauce recipe &#38; salvaging curbside furniture on walks with my dog. </p>
+              </div>
+              <div class="about avatar">
+                <img id="profilePic" src="img/Me.jpg" alt="Image of the designer"/>
+              </div>
+            </div>
+        </section>
+
+          <div id="jumpTo">
+            <button><a href="#projects-header" alt="Link to jump to the portolio pieces section">See my work &#62;</a></button>
+          </div>
+
+        <section id="skills">
+          <h2 id="skills-header" class="header">Skills</h2>
+
+            <div class="skillsWrap">
+              <div class="skillsGrid">
+                <!-- devicon = ICON FROM DEVICON -->
+                <!-- fas = ICON FROM FONT AWESOME -->
+
+                  <div class="box q">
+                    <i class="devicon-html5-plain icon"></i>
+                    <p>HTML 5</p>
+                  </div>
+                  <div class="box q">
+                    <i class="devicon-css3-plain icon"></i>
+                    <p>CSS 3</p>
+                  </div >
+                  <div class="box q">
+                    <i class="devicon-javascript-plain icon"></i>
+                    <p>JavaScript</p>
+                  </div >
+                  <div class="box q">
+                    <i class="devicon-python-plain icon"></i>
+                    <p>Python</p>
+                  </div >
+
+                  <div class="box r">
+                    <i class="fa-solid fa-maximize icon"></i>
+                    <p>Responsivity</p>
+                  </div >
+                  <div class="box r">
+                    <i class="fa-solid fa-universal-access"></i>
+                    <p>Accessibility</p>
+                  </div >
+                  <div class="box r">
+                    <i class="devicon-xd-plain icon"></i>
+                    <p>Xd</p>
+                  </div >
+                  <div class="box r">
+                    <i class="devicon-illustrator-plain icon"></i>
+                    <p>Illustrator</p>
+                  </div >
+                  <div class="box s">
+                    <i class="devicon-photoshop-plain icon"></i>
+                    <p>Photoshop</p>
+                  </div >
+                  <div class="box s">
+                    <i class="devicon-premierepro-plain icon"></i>
+                    <p>Premiere Pro</p>
+                  </div >
+                  <div class="box s">
+                    <!-- <i><object type="image/svg" id="dav"><img src="programming_icons/DaVinci_logo.svg" /></object></i> -->
+                    <?xml version="1.0" encoding="UTF-8"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" href="stylesheet.css" height="24" width="inherit" viewBox="0 0 151.5 151.5" preserveAspectRatio="xMidYMid meet">
+                        <!-- CLASS ON SVG TO CALL HOVER? -->
+                          <defs>
+                            <style>.d{fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:8px;}</style>
+                          </defs>
+                            <g id="a"/>
+                              <g id="b">
+                                <g id="c">
+                                  <path class="d" d="M75.75,4c39.63,0,71.75,32.12,71.75,71.75s-32.12,71.75-71.75,71.75S4,115.38,4,75.75,36.12,4,75.75,4Zm-15.97,39.66c-.24,4.67,1.92,10.71,5.56,16.3,2.93,4.49,5.73,9.3,10.17,9.53,4.06,.21,7.21-3.62,9.98-7.5,3.44-4.83,6.98-11.47,7.25-16.65,.43-8.41-6.68-15.36-15.18-15.79-9.98-.51-17.35,5.7-17.78,14.11Zm49.56,26.06c-4.67-.27-10.73,1.86-16.35,5.51-4.51,2.93-9.35,5.72-9.61,10.21-.24,4.1,3.57,7.31,7.42,10.13,4.8,3.51,11.41,7.13,16.6,7.43,8.41,.49,15.41-6.64,15.91-15.23,.59-10.08-5.57-17.56-13.97-18.05ZM27.29,87.63c.5,8.51,7.5,15.57,15.9,15.08,5.18-.3,11.79-3.89,16.6-7.37,3.86-2.8,7.67-5.98,7.43-10.03-.26-4.44-5.09-7.21-9.6-10.11-5.62-3.61-11.68-5.72-16.34-5.45-8.41,.49-14.56,7.9-13.98,17.88Z"/>
+                                </g>
+                              </g>
+                            </svg>
+                    <p>DaVinci Resolve</p>
+                  </div >
+                  <div class="box s">
+                  <!-- leave empty -->
+                  </div >
+              </div >
+            </div>
+          </section>
+
+        <h2 id="projects-header" class="header">Portfolio</h2>
+          <div id="projWrap">
+             <h3>Logo Design Process</h3>
+            <!-- Projects Carousel -->
+                          <!-- <div class="slides">
+                            <img src="img/bubblelogo2.svg" height="550px"/>
+                            <p>First Draft</p>
+                          </div> -->
+                <div>
+                    <a href="logo.html" target="_blank"><img src="img/ribbonlogo2_1.png" class="projLink" alt="Click to view logo design portfolio:"/></a>
+                </div>
+              <h3>Website Design Process</h3>
+                        <!-- <div class="slides">
+                          <img src="img/websitemockup-code.JPG"/>
+                          <p>Code Mockup</p>
+                        </div>  -->
+                <div>
+                    <a href="dev.html" target="_blank"><img src="img/websitemockup-code.JPG" class="projLink" alt="Click to view web development portfolio:"/></a>
+                </div>
+              <!-- <h3 class="header">Logo Design Process</h3>
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li>
+                      <img src="img/logofinal.svg" />
+                    </li>
+                    <li>
+                      <img src="img/LogoBoard1.png" />
+                    </li>
+                    <li>
+                      <img src="img/LogoBoard2.png" />
+                    </li>
+                    <li>
+                      <img src="img/LogoBoard3.png" />
+                    </li>
+                    <li>
+                      <img src="img/LogoBoard4.png" />
+                    </li>
+                    <li>
+                      <img src="img/LogoBoard5.png" />
+                    </li>
+                  </ul>
+                </div>
+
+                <h3 class="header">Website Development Process</h3>
+
+                  <div class="flexslider">
+                    <ul class="slides">
+
+                      <li>
+                        <img src="img/FinalSite.png"/>
+                      </li>
+
+                      <li>
+                        <img src="img/AndreaHolstein_GD_CozyMoodboard.jpg"/>
+                      </li>
+
+                      <li>
+                        <img src="img/FirstProto.png"/>
+                      </li>
+
+                      <li>
+                        <img src="img/PortfolioSite.png"/>
+                      </li>
+
+                    </ul>
+                  </div> -->
+          </div>
+        <div class="resume">
+          <h2 id="experience-header" class="header">Programming Experience</h2>
+            <!-- Mini Programming Resume -->
+            <p>
+              <ul id="resume">
+                <li class="codeCamp"><p>Free Code Camp</p><small>Responsive Web Design</small></li>
+                <li class="uFor"><p>UforChange</p><small>Graphic Design &#38; Web Development Intensive</small></li>
+                <li class="colt"><p>Colt Steele</p><small>Ultimate Web Development Bootcamp</small></li>
+                <li class="light"><p>Lighthouse Labs</p><small>21-Day Javascript Challenge</small></li>
+                <li class="python"><p>Code Academy</p><small>Python</small></li>
+                <li class="queens"><p>Computing</p><small>Queen's University</small></li>
+                <li><?xml version="1.0" encoding="UTF-8"?>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40px" class="coffee" viewBox="0 0 193.67 132.01"><defs><style>.d{fill:none;stroke:#231f20;stroke-miterlimit:10;}</style></defs><g id="a"/><g id="b"><g id="c"><path class="d" d="M56.88,3.53h0c22.77-2.19,66.53-5.56,85.07,0,3.1,.93,11.06,3.32,11.17,6.84,.07,2.39-3.51,4.45-6.87,5.99-6.69,3.05-55.35,25.24-85.07,.86-5.21-4.28-6.62-7.34-9.45-6.84-10.46,1.84-22.97,49.05-1.72,76.97,25.16,33.05,87.69,25.96,101.39,3.42,9.53-15.68-6.52-35.6,8.59-60.72,1.8-2.99,8.75-14.55,16.33-13.68,7.87,.9,12.48,14.75,13.75,23.09,3.69,24.16-13.33,49.51-20.62,47.89-3.81-.84-3.27-8.69-6.01-15.39C147.63,33.45,20.53,26.76,2.74,66.82c-5.49,12.37-.01,27.94,6.87,37.63,24.83,34.94,98.31,36.01,183.88,3.42"/></g></g>
+                  </svg></li>
+                <li><?xml version="1.0" encoding="UTF-8"?>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40px" class="cat" viewBox="0 0 129.27 241.48"><defs><style>.d{fill:none;stroke:#231f20;stroke-miterlimit:10;}</style></defs><g id="a"/><g id="b"><g id="c"><path class="d" d="M45.7,211.53C5.73,180.46-1.59,157.87,.95,145.78c5.63-26.74,39.5-31.62,72.38-78.25,17.37-24.63,11.89-60.59,4.81-66.3-5.94-4.78-14.11,15.23-29.62,21.26s5.43,57.67-7.76,63.56c-8.89,3.97-24.54-16.45-30.44-19.73-5.82-3.24,13.76-11.54,24.75-31.78C45.35,15.63,45.69,1.16,29.39,13.18,1.77,33.54,62.89,47.93,89.8,139.31c7.57,25.71,9.81,55.26-10.26,79.45-20.35,24.53-64.44,28.5-74.45,13.15-8.44-12.93,45.43-117.87,79.19-131.82,13.63-5.63,27.51-10.61,27.92-29.57,.62-28.38-5.85-62.58,16.9-54.36"/></g></g>
+                  </svg></li>
+                <li><?xml version="1.0" encoding="UTF-8"?>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40px" class="blobs2" viewBox="0 0 121.8 147.25"><defs><style>.d{fill:none;stroke:#231f20;stroke-miterlimit:10;}</style></defs><g id="a"/><g id="b"><g id="c"><g><path class="d" d="M23.45,72.27c-4.03-9.54-5.27-18.74-4.15-29.44C21.03,26.27,30.7,3.5,46.73,.77c9.96-1.69,18.33,5.04,19.75,6.18,12.41,9.98,13.13,27.04,13.17,28.45,.49,17.82-11.87,24.2-12.28,35.17"/><path class="d" d="M86.11,9.43c7.33-5.58,20.43-.51,27.43,7.42,12.22,13.84,7,37.62,4.39,49.48-6.93,31.53-31.88,81.44-69.13,80.4-21.8-.61-47.64-18.67-48.28-39.58-.79-25.63,36.44-50.04,58.16-42.06,12.69,4.66,17.29,19.35,21.95,17.32,9.22-4.02-10.53-60.78,5.49-72.98Z"/></g></g></g>
+                  </svg></li>
+                <li class="empty"></li>
+                <li><?xml version="1.0" encoding="UTF-8"?>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40px" class="heart" viewBox="0 0 125.45 150.61"><defs><style>.d{fill:none;stroke:#231f20;stroke-miterlimit:10;}</style></defs><g id="a"/><g id="b"><g id="c"><path class="d" d="M41.66,134.16c30.91-17.65,49.79-41.02,60.34-52.28,12.17-12.99,27.34-36.85,21.75-57.27-2.46-8.99-9.84-17.48-21.48-21.39-19.12-6.43-39.34,25.17-44.3,46.87-1.94,8.49-2.87,25.24-2.33,37.46,.62,13.83,3.81,34.13,5.91,30.08C68.75,103.79,74.68,3.78,40.88,.64,18.53-1.44,4.37,20.12,.87,45.09c-7.77,55.5,108.57,100.38,120.55,105.05"/></g></g>
+                </svg></li>
+                <li><?xml version="1.0" encoding="UTF-8"?>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40px" class="lips" viewBox="0 0 180.53 110.42"><defs><style>.d{fill:none;stroke:#231f20;stroke-miterlimit:10;}</style></defs><g id="a"/><g id="b"><g id="c"><path class="d" d="M.23,103.28c39.86-20.94,49.59-39.69,50.98-53.07,1.08-10.44-.59-18.55,2.68-23.45,12.07-18.06,32.83,9.08,48.29,3.94,16.18-5.38,12.07-25.7,20.12-29.86,5.6-2.89,8.17,13.68,24.15,24.69,16.7,11.5,32.68,8.23,33.54,12.34,2.55,12.22-139.69,36.42-138.18,56.78,.75,10.09,36.77,19.17,67.08,13.58,36.02-6.64,68.08-34.36,63.05-46.9-6.38-15.92-81.85-13.7-105.98,11.41"/></g></g>
+                  </svg></li>
+                <li class="empty"></li>
+                <li><?xml version="1.0" encoding="UTF-8"?>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40px" class="face" viewBox="0 0 166.06 200.84"><defs><style>.d{fill:none;stroke:#231f20;stroke-miterlimit:10;}</style></defs><g id="a"/><g id="b"><g id="c"><path class="d" d="M138.67,19.31C104.03-2.97,47.85-1.77,37.14,4.27,8.92,20.19,.47,44.43,12.62,75.89c6.15,15.92-5.99,32.43-11.04,38.6-4.64,5.67,5.68,19.96,31.27,10.97,11.66-4.09-13.5-18.72-6.75-11.7,2.62,2.73-6.32,23.18-5.72,26.77,.83,4.98,9.4,4.12,10.43,8.48,0,0-16.51,5.31-6.75,10.82,8.54,1.16,6.45,4.41,6.7,5.9,.65,3.84-7.13,11.43-12.64,20.57-5.53,9.19,10.96,12.42,15.64,13.91,16.69,5.34,64.34-155.44,97.82-150.45,24.91,3.71,58.4,77.79,7.08,118.19-30.18,23.76-84.84,33.71-92.02,32.09"/></g></g>
+                  </svg></li>
+                <li class="empty"></li>
+
+              </ul>
+            </p>
+          </div>
+          <!-- <div>
+            <a href="#top" alt="Link to jump back to the top of the site">Up top!</a>
+          </div> -->
+      <section id="contactMe">
+        <h2 id="contact-header" class="header" alt="Contact me section">Get In Touch&excl;</h2>
+          <style>
+            input::placeholder {
+              font-size: 12px;
+              top: 4px;
+              letter-spacing: 2px;
+              font-weight: lighter;
+            }
+          </style>
+          <div class="wrapper3">
+            <div class="linkedBox l">
+              <p>If  you enjoyed my portfolio, consider reaching out on LinkedIn, or via the contact form &#62;</p>
+              <a href="https://www.linkedin.com/in/andrea-holstein" target="_blank"><i class="fa-brands fa-linkedin-in iconLink"></i></a>
+            </div>
+            <div class="formBox f">
+              <form class="contactForm" method="POST" action="">
+                <label for="name"></label>
+                <input id="name" placeholder="Name" type="text" name="name">
+                <label for="email"></label>
+                <input id="email" placeholder="Email" type="email" name="email">
+                <label for="message"></label>
+                <textarea id="message" placeholder="Let's chat!" name="message"></textarea>
+              <!--  style="vertical-align:text-top"-->
+
+                <button type="submit" id="submit">Send</button>
+
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- page wrap -->
+    </div>
+    <!-- THIS IS FIXED, DO NOT TOUCH-->
+    <footer><p>Designed &#38; created by Andrea Holstein, &copy; 2022</p></footer>
+
+
+
+    <!-- best to put jquery scripts here - loads later without lagging site -->
+    <!-- FLEX SLIDER/CAROUSEL -->
+    <!-- <link rel="stylesheet" href="flexslider.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="jquery.flexslider.js"></script> -->
+    <!-- LOAD CAROUSEL -->
+    <!-- <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+          $('.flexslider').flexslider();
+        });
+    </script> -->
+  </body>
+</html>
