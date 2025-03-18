@@ -2,17 +2,18 @@
 import { useState, useEffect } from 'react'
 // ---------- COMPONENTS ----------
 // import Header, Bio, Projects, Footer
+import Bio from '../../components/Bio/Bio';
 // ---------- STYLES ----------
-import "HomePage.scss";
+import "./HomePage.scss";
 
 export default function HomePage() {
 
     return (
         <section className="home">
-            {/* <Header />
+            {/* <Header /> */}
             <Bio />
-            <Projects /> 
-            <Footer /> */}
+            {/* <Projects />  */}
+            {/* <Footer /> */}
         </section>
     );
 }

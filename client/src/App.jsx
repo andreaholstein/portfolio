@@ -4,7 +4,8 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 // ---------- PAGES ----------
 import HomePage from './pages/HomePage/HomePage';
 // ---------- STYLES ----------
-import './App.scss'
+import './App.scss';
+import './styles/global.scss';
 
 function App() {
 
