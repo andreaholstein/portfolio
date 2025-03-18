@@ -1,0 +1,199 @@
+@use "_fonts.scss" as *;
+@use "_variables.scss" as *;
+@use "_mixins.scss" as *;
+
+ul {
+  list-style-type: none;
+}
+
+// NAME
+h1 {
+  margin: 0;
+  color: $orange;
+  font-family: "Cherry Bomb", sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  //   font-weight: 400;
+  @include tablet {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    // font-weight: 400;
+  }
+  //   @include desktop {
+  //     font-size: 2.5rem;
+  //     line-height: 2.5rem;
+  //     // font-weight: 400;
+  //   }
+}
+
+// HEADERS
+h2 {
+  margin: 0;
+  color: $orange;
+  font-family: "Bagel", sans-serif;
+  font-size: 1.625rem;
+  line-height: 2.375rem;
+  //   font-weight: 300;
+  //   font-style: normal;
+  @include tablet {
+    font-size: 3.25rem;
+    line-height: 4.125rem;
+    // font-weight: 300;
+    // font-style: normal;
+  }
+  //   @include desktop {
+  //     font-size: 3.25rem;
+  //     line-height: 4.125rem;
+  //     // font-weight: 300;
+  //     // font-style: normal;
+  //   }
+}
+
+// HEADERS - ALT COLOUR
+.h2--alt {
+  margin: 0;
+  color: $light;
+  font-family: "Bagel", sans-serif;
+  font-size: 1.625rem;
+  line-height: 2.375rem;
+  //   font-weight: 300;
+  //   font-style: italic;
+  @include tablet {
+    font-size: 3.25rem;
+    line-height: 4.125rem;
+    // font-weight: 300;
+    // font-style: italic;
+  }
+  //   @include desktop {
+  //     font-size: 3.25rem;
+  //     line-height: 4.125rem;
+  //     // font-weight: 300;
+  //     // font-style: italic;
+  //   }
+}
+
+// HEADING
+h3 {
+  margin: 0;
+  color: $primary-color-dgreen;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  font-weight: 500;
+  font-style: normal;
+  @include tablet {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+  @include desktop {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+}
+
+// BODY HEAD LIGHT
+h4 {
+  margin: 0;
+  color: $light;
+  font-family: "Outfit Medium", sans-serif;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  font-weight: 300;
+  font-style: normal;
+  @include tablet {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    font-weight: 300;
+    font-style: normal;
+  }
+  @include desktop {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
+
+// BODY COPY
+p {
+  margin: 0;
+  color: $light;
+  font-family: "Outfit Medium", sans-serif;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  //   font-weight: 500;
+  //   font-style: normal;
+  @include tablet {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    // font-weight: 500;
+    // font-style: normal;
+  }
+  //   @include desktop {
+  //     font-size: 1.25rem;
+  //     line-height: 1.625rem;
+  //     // font-weight: 500;
+  //     // font-style: normal;
+  //   }
+}
+
+// BODY COPY - ALT COLOUR
+.p--alt {
+  margin: 0;
+  color: $dark;
+  font-family: "Outfit Light", sans-serif;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  //   font-weight: 500;
+  //   font-style: normal;
+  @include tablet {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    // font-weight: 500;
+    // font-style: normal;
+  }
+  //   @include desktop {
+  //     font-size: 1.25rem;
+  //     line-height: 1.625rem;
+  //     // font-weight: 500;
+  //     // font-style: normal;
+  //   }
+}
+
+// LINK
+a {
+  margin: 0;
+  text-decoration: none;
+  color: $primary-color-dgreen;
+  font-family: "Outfit", sans-serif;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  //   font-weight: 500;
+  //   font-style: normal;
+  @include tablet {
+    font-size: 0.875rem;
+    line-height: 1.0938rem;
+    // font-weight: 500;
+    // font-style: normal;
+  }
+  //   @include desktop {
+  //     font-size: 0.875rem;
+  //     line-height: 1.0938rem;
+  //     // font-weight: 500;
+  //     // font-style: normal;
+  //   }
+}
+
+a:hover {
+  @include a;
+  color: $orange;
+}
+
+a:focus {
+  @include a;
+  color: $pink;
+}

@@ -1,0 +1,38 @@
+// @use "./_variables" as *;
+
+// ----------- THEME - CHERRY BOMB -----------
+@font-face {
+  font-family: "Cherry Bomb";
+  src: url("../../assets/fonts/CherryBombOne-Regular.woff") format("woff");
+  src: url("../../assets/fonts/woff2/CherryBombOne-Regular.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+// ----------- HEADERS - BAGEL FAT ONE -----------
+@font-face {
+  font-family: "Bagel";
+  src: url("../../assets/fonts/BagelFatOne-Regular.woff") format("woff");
+  src: url("../../assets/fonts/woff2/BagelFatOne-Regular.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+// ----------- TEXT - OUTFIT -----------
+// LIGHT
+@font-face {
+  font-family: "Outfit Light";
+  src: url("../../assets/fonts/Outfit-Light.woff") format("woff");
+  src: url("../../assets/fonts/woff2/Outfit-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+// MEDIUM
+@font-face {
+  font-family: "Outfit Medium";
+  src: url("../../assets/fonts/Outfit-Medium.woff") format("woff");
+  src: url("../../assets/fonts/woff2/Outfit-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
