@@ -1,0 +1,50 @@
+@use "../../styles/_partials/variables" as *;
+@use "../../styles/_partials/typography" as *;
+@use "../../styles/_partials/mixins" as *;
+
+.header {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  &__nav {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  &__hamburger {
+    height: 3.5rem;
+    width: 3.5rem;
+    padding: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $pink;
+    border-radius: 0 0 0 1.25rem;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  &__hamburger-icon {
+    height: inherit;
+    width: inherit;
+    // fill: $light;
+  }
+
+  &__hamburger-icon path {
+    fill: $light;
+  }
+
+  // TO DO
+  //   &__hamburger-icon:hover path {
+  //     fill: $orange;
+  //   }
+
+  //   &__hamburger-icon:focus path {
+  //     fill: $orange;
+  //   }
+}
