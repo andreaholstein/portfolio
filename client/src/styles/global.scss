@@ -2,3 +2,7 @@
 @use "./_partials/typography" as *;
 @use "./_partials/variables.scss" as *;
 @use "./_partials/mixins.scss" as *;
+
+.title {
+  padding-bottom: 0.5rem;
+}

@@ -75,24 +75,24 @@ h2 {
 // HEADING
 h3 {
   margin: 0;
-  color: $primary-color-dgreen;
+  color: $pink;
   font-family: "Outfit", sans-serif;
   font-size: 1.125rem;
   line-height: 1.4375rem;
-  font-weight: 500;
-  font-style: normal;
+  // font-weight: 500;
+  // font-style: normal;
   @include tablet {
     font-size: 1.5rem;
     line-height: 1.875rem;
-    font-weight: 500;
-    font-style: normal;
+    // font-weight: 500;
+    // font-style: normal;
   }
-  @include desktop {
-    font-size: 1.5rem;
-    line-height: 1.875rem;
-    font-weight: 500;
-    font-style: normal;
-  }
+  // @include desktop {
+  //   font-size: 1.5rem;
+  //   line-height: 1.875rem;
+  //   // font-weight: 500;
+  //   // font-style: normal;
+  // }
 }
 
 // BODY HEAD LIGHT
@@ -102,20 +102,20 @@ h4 {
   font-family: "Outfit Medium", sans-serif;
   font-size: 0.75rem;
   line-height: 0.9375rem;
-  font-weight: 300;
-  font-style: normal;
+  // font-weight: 300;
+  // font-style: normal;
   @include tablet {
     font-size: 1.25rem;
     line-height: 1.625rem;
-    font-weight: 300;
-    font-style: normal;
+    // font-weight: 300;
+    // font-style: normal;
   }
-  @include desktop {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-    font-weight: 300;
-    font-style: normal;
-  }
+  // @include desktop {
+  //   font-size: 1.25rem;
+  //   line-height: 1.625rem;
+  //   // font-weight: 300;
+  //   // font-style: normal;
+  // }
 }
 
 // BODY COPY
@@ -168,7 +168,7 @@ p {
 a {
   margin: 0;
   text-decoration: none;
-  color: $primary-color-dgreen;
+  color: $light;
   font-family: "Outfit", sans-serif;
   font-size: 0.75rem;
   line-height: 0.9375rem;
@@ -189,11 +189,11 @@ a {
 }
 
 a:hover {
-  @include a;
+  @extend a;
   color: $orange;
 }
 
 a:focus {
-  @include a;
+  @extend a;
   color: $pink;
 }

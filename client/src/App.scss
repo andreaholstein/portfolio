@@ -1,5 +1,16 @@
 @use "./styles/_partials/variables" as *;
 
-* {
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
   background-color: $bkgd;
+}
+
+body {
+  margin: 0;
+  width: inherit;
 }
