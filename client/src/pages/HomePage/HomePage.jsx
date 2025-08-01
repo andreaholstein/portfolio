@@ -11,7 +11,7 @@ export default function HomePage() {
 
     return (
         <section className="home">
-            <Header />
+            {/* <Header /> */}
             <Bio />
             {/* <Projects />  */}
             {/* <Footer /> */}
