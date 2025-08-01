@@ -2,11 +2,12 @@
 @use "../../styles/_partials/typography" as *;
 @use "../../styles/_partials/mixins" as *;
 
-.home {
-  margin: 0;
-  padding: 1rem;
-  width: inherit;
-  display: flex;
-  flex-direction: column;
-  //   justify-content: space-around;
+.projects {
+  margin: 2rem 0;
+  width: 100%;
+
+  &__accordion {
+    display: flex;
+    flex-direction: column;
+  }
 }
