@@ -9,8 +9,8 @@ ul {
 // NAME
 h1 {
   margin: 0;
-  color: $orange;
-  font-family: "Cherry Bomb", sans-serif;
+  color: $light;
+  font-family: "Outfit Medium", sans-serif;
   font-size: 2.75rem;
   line-height: 3rem;
   //   font-weight: 400;
@@ -29,8 +29,8 @@ h1 {
 // HEADERS
 h2 {
   margin: 0;
-  color: $orange;
-  font-family: "Bagel", sans-serif;
+  color: $light;
+  font-family: "Outfit Medium", sans-serif;
   font-size: 2.625rem;
   line-height: 3.375rem;
   //   font-weight: 300;
@@ -53,7 +53,7 @@ h2 {
 .h2--alt {
   margin: 0;
   color: $light;
-  font-family: "Bagel", sans-serif;
+  font-family: "Outfit - Medium", sans-serif;
   font-size: 2.625rem;
   line-height: 3.375rem;
   //   font-weight: 300;
@@ -75,7 +75,7 @@ h2 {
 // HEADING
 h3 {
   margin: 0;
-  color: $pink;
+  color: $accent;
   font-family: "Outfit", sans-serif;
   font-size: 2.125rem;
   line-height: 2.4375rem;
@@ -190,10 +190,10 @@ a {
 
 a:hover {
   @extend a;
-  color: $orange;
+  color: $light;
 }
 
 a:focus {
   @extend a;
-  color: $pink;
+  color: $accent;
 }

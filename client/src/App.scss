@@ -4,10 +4,19 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-y: scroll;
 }
 
 html {
-  background-color: $bkgd;
+  background: linear-gradient(
+      0deg,
+      rgba(12, 12, 12, 0.72),
+      rgba(12, 12, 12, 0.72)
+    ),
+    url("src/assets/images/wolfgang-hasselmann-w8I77HLAB8I-unsplash.jpg");
+  background-size: cover;
+  background-position: right; // PERFECTION!
+  background-color: $bkgd-shade;
 }
 
 body {

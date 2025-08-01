@@ -3,6 +3,8 @@
 @use "../../styles/_partials/mixins" as *;
 
 .header {
+  margin-bottom: 2rem;
+  padding-left: 0.5rem;
   height: max-content;
   width: 100%;
   display: flex;
@@ -10,6 +12,7 @@
   box-sizing: border-box;
 
   &__nav {
+    // background-color: $bkgd-shade;
     width: inherit;
     display: flex;
     flex-direction: column;
@@ -28,13 +31,13 @@
   }
 
   &__hamburger {
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
     padding: 0.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $pink;
+    background-color: $bkgd-shade; // change in NavLinks.scss as well!
     border-radius: 0 0 0 1.25rem;
     box-sizing: border-box;
     &--active {
