@@ -1,6 +1,6 @@
 // ---------- FXNALITY ----------
 import { useState } from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // ---------- COMPONENTS ----------
 import Header from './components/Header/Header';
 // ---------- PAGES ----------
