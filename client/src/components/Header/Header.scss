@@ -37,7 +37,9 @@
     background-color: $pink;
     border-radius: 0 0 0 1.25rem;
     box-sizing: border-box;
-    cursor: pointer;
+    &--active {
+      border-radius: 0;
+    }
   }
 
   &__hamburger-icon {
@@ -58,4 +60,5 @@
   //   &__hamburger-icon:focus path {
   //     fill: $orange;
   //   }
+  // cool transition between  - - - line hamburger full width and angled width
 }

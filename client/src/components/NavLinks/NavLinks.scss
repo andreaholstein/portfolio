@@ -1,0 +1,18 @@
+@use "../../styles/_partials/variables" as *;
+@use "../../styles/_partials/typography" as *;
+@use "../../styles/_partials/mixins" as *;
+
+.nav {
+  width: 100vw;
+  height: max-content;
+  background-color: $pink;
+
+  &__list {
+    padding: 1rem 0;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
