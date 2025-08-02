@@ -9,7 +9,7 @@ import projects from "../../assets/data/resume.json"
 import "./Projects.scss";
 
 export default function Projects() {
-    console.log(projects);
+    // console.log(projects);
 
     // LOAD DATA
     let allProjects = [];
@@ -21,55 +21,27 @@ export default function Projects() {
     const [isShowOtherProjects, setIsShowOtherProjects] = useState(null);
 
     // ACTIVE HEADER
-    const [isActiveHeader, setIsActiveHeader] = useState("");
+    const [isActiveHeader, setIsActiveHeader] = useState(null);
+    // logic feels like it's on the tip of my tongue, but trying to use this^ state to hold the active header value, and when the header loses this active status, need it to toggle itself off!
 
-    // some logic for all the sets - can it be replace with some "activeState = <whatever was clicked on>" and "whatever used to be activeSatte and lost that status, toggle yourself to false"
-    //^ to counteract the rendering issue of seeting everything to the opposite?
-
+    // const collapseHeaders = () => {
     // LOGIC FOR LOADING PROJECTS
-    if (isShowTVProjects) {
-        isShowTVProjects === isActiveHeader;
-        // setIsShowFilmProjects(false);
-        // setIsShowTheatreProjects(false);
-        // setIsShowOtherProjects(false);
-        if (isShowTVProjects === isActiveHeader) {
-            allProjects = projects.filter((project) => project.category === "tv");
-        } else {
-            isShowTVProjects !== isActiveHeader
-        }
-    } else if (isShowFilmProjects) {
-        setIsActiveHeader(isShowFilmProjects);
-        // setIsShowTVProjects(false);
-        // setIsShowTheatreProjects(false);
-        // setIsShowOtherProjects(false);
-        if (isActiveHeader === isShowFilmProjects) {
-            allProjects = projects.filter((project) => project.category === "film");
-        } else {
-            setIsActiveHeader(null);
-        }
-    } else if (isShowTheatreProjects) {
-        isShowTheatreProjects === isActiveHeader;
-        // setIsShowTVProjects(false);
-        // setIsShowFilmProjects(false);
-        // setIsShowOtherProjects(false);
-        if (isShowTheatreProjects === isActiveHeader) {
-            allProjects = projects.filter((project) => project.category === "theatre");
-        } else {
-            isShowTheatreProjects !== isActiveHeader
-        }
-    } else if (isShowOtherProjects) {
-        isShowOtherProjects === isActiveHeader;
-        // setIsShowTVProjects(false);
-        // setIsShowFilmProjects(false);
-        // setIsShowTheatreProjects(false);
-        if (isShowOtherProjects === isActiveHeader) {
-            allProjects = projects.filter((project) => project.category === "other");
-        } else {
-            isShowOtherProjects !== isActiveHeader
-        }
+    if (isActiveHeader === isShowTVProjects) {
+        allProjects = projects.filter((project) => project.category === "tv");
+        console.log("Collapse TV:", allProjects);
+    } else if (isActiveHeader === isShowFilmProjects) {
+        allProjects = projects.filter((project) => project.category === "film");
+        console.log("Collapse FILM:", allProjects);
+    } else if (isActiveHeader === isShowTheatreProjects) {
+        allProjects = projects.filter((project) => project.category === "theatre");
+        console.log("Collapse THEATRE:", allProjects);
+    } else if (isActiveHeader === isShowOtherProjects) {
+        allProjects = projects.filter((project) => project.category === "other");
+        console.log("Collapse OTHER:", allProjects);
     } else {
         console.log("No Projects have been selected from the accordion")
     }
+    // }
 
     return (
         <section className="projects">
@@ -77,7 +49,7 @@ export default function Projects() {
             <div className="projects__accordion">
                 <div className="projects__tv">
                     <button onClick={() => {
-                        setIsShowTVProjects(!isShowTVProjects)
+                        setIsShowTVProjects(!isShowTVProjects); collapseHeaders;
                     }}
                         className="tv__title">Television</button>
                     {isShowTVProjects && (
@@ -93,7 +65,7 @@ export default function Projects() {
                 </div>
                 <div className="projects__film">
                     <button onClick={() => {
-                        setIsShowFilmProjects(!isShowFilmProjects)
+                        setIsShowFilmProjects(!isShowFilmProjects); collapseHeaders();
                     }} className="film__title">Film</button>
                     {isShowFilmProjects && (
                         <div className="tv__credits">
@@ -107,7 +79,7 @@ export default function Projects() {
                 </div>
                 <div className="projects__theatre">
                     <button onClick={() => {
-                        setIsShowTheatreProjects(!isShowTheatreProjects)
+                        setIsShowTheatreProjects(!isShowTheatreProjects); collapseHeaders();
                     }} className="theatre__title">Theatre</button>
                     {isShowTheatreProjects && (
                         <div className="tv__credits">
@@ -121,7 +93,7 @@ export default function Projects() {
                 </div>
                 <div className="projects__multimedia">
                     <button onClick={() => {
-                        setIsShowOtherProjects(!isShowOtherProjects)
+                        setIsShowOtherProjects(!isShowOtherProjects); collapseHeaders();
                     }} className="multi__title">Other Media</button>
                     {isShowOtherProjects && (
                         <div className="tv__credits">
