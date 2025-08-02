@@ -1,3 +1,11 @@
 @use "../../styles/_partials/variables" as *;
 @use "../../styles/_partials/typography" as *;
 @use "../../styles/_partials/mixins" as *;
+
+.project {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}

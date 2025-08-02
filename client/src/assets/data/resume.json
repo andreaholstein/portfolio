@@ -22,7 +22,7 @@
     "category": "tv",
     "title": "Hello Again",
     "role": "Medic #2",
-    "productionCompany": ["CBC Gem", "100 Dragons"],
+    "productionCompany": ["CBC Gem", ", ", "100 Dragons"],
     "venue": null,
     "director": "Melanie Chung"
   },
@@ -31,9 +31,9 @@
     "category": "tv",
     "title": "Dan Brown's The Lost Symbol",
     "role": "DCF Officer",
-    "productionCompany": ["CBS", "Universal"],
+    "productionCompany": ["CBS", ", ", "Universal"],
     "venue": null,
-    "director": ["Felix Alcala", "Kate Woods"]
+    "director": ["Felix Alcala", ", ", "Kate Woods"]
   },
   {
     "id": "18",
@@ -58,7 +58,7 @@
     "category": "film",
     "title": "Mine",
     "role": "Tech",
-    "productionCompany": ["OYA", "SIRT"],
+    "productionCompany": ["OYA", ", ", "SIRT"],
     "venue": null,
     "director": "Fiyin Coker"
   },
@@ -104,7 +104,7 @@
     "title": "Puzzles",
     "role": "Gwen",
     "productionCompany": "In Character Productions",
-    "venue": ["Alumnae Theatre", "Toronto Fringe"],
+    "venue": ["Alumnae Theatre", ", ", "Toronto Fringe"],
     "director": "Lisa Meuser"
   },
   {
@@ -113,14 +113,14 @@
     "title": "Patchface",
     "role": "Woman",
     "productionCompany": "Allswell Productions",
-    "venue": ["Palace Theatre", "Vancouver Fringe"],
+    "venue": ["Palace Theatre", ", ", "Vancouver Fringe"],
     "director": "Hailey Hill"
   },
   {
     "id": "9",
     "category": "theatre",
     "title": "Zoo Story",
-    "role": ["Peter", "Jerry"],
+    "role": ["Peter", ", ", "Jerry"],
     "productionCompany": "Humber College AFTV",
     "venue": "Humber College",
     "director": "Dixie Seattle"
@@ -156,7 +156,7 @@
     "id": "5",
     "category": "theatre",
     "title": "Women Beware Women",
-    "role": ["Fabrizia", "Messenger", "Boy #1"],
+    "role": ["Fabrizia", ", ", "Messenger", ", ", "Boy #1"],
     "productionCompany": "UWO",
     "venue": "McManus Theatre",
     "director": "Jo Devereux"
@@ -165,7 +165,7 @@
     "id": "4",
     "category": "theatre",
     "title": "As You Like It",
-    "role": ["Le Beau", "Martext", "2nd Page"],
+    "role": ["Le Beau", ", ", "Martext", ", ", "2nd Page"],
     "productionCompany": "Summer Shakespeare",
     "venue": "UWO",
     "director": "Jo Devereux"
@@ -174,7 +174,7 @@
     "id": "3",
     "category": "theatre",
     "title": "Simon The Brave!",
-    "role": ["Villager #2", "Goblin #2"],
+    "role": ["Villager #2", ", ", "Goblin #2"],
     "productionCompany": "Purple Shorts Festival",
     "venue": "UWO",
     "director": "Maddy Oliver"
@@ -192,7 +192,7 @@
     "id": "1",
     "category": "theatre",
     "title": "Twelfth Night",
-    "role": ["Curio", "Lady to Olivia"],
+    "role": ["Curio", ", ", "Lady to Olivia"],
     "productionCompany": "Summer Shakespeare",
     "venue": "UWO",
     "director": "Jo Devereux"
