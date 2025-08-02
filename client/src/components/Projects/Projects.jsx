@@ -26,14 +26,15 @@ export default function Projects() {
     const [isShowTheatreProjects, setIsShowTheatreProjects] = useState(false);
     const [isShowOtherProjects, setIsShowOtherProjects] = useState(false);
 
+    // CIRCLE BACK TO THIS
     // ACTIVE HEADER
     // const [isActiveHeader, setIsActiveHeader] = useState(null);
     // logic feels like it's on the tip of my tongue, but trying to use this^ state to hold the active header value, and when the header loses this active status, need it to toggle itself off!
 
     // const oneAtATime = () => {
     // PSEUDO
-    // if active header, great
-    // if not active header, close
+    // if active header, great - show yourself
+    // if not active header, hide/close
     // }
 
     return (
