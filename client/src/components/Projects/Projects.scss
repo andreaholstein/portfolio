@@ -11,3 +11,10 @@
     flex-direction: column;
   }
 }
+
+button {
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  // if global.scss button design gets overwritten, update manually here
+}
