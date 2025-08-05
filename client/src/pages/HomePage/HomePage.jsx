@@ -4,12 +4,15 @@ import { useState, useEffect } from 'react'
 import Bio from '../../components/Bio/Bio';
 // import Header from '../../components/Header/Header';
 import Demos from '../../components/Demos/Demos';
+import PhotoBubble from '../../components/PhotoBubble/PhotoBubble';
 import Projects from '../../components/Projects/Projects';
+import Footer from '../../components/Footer/Footer';
 // ---------- DATA ----------
 import photos from "../../assets/data/photos.json";
 // ---------- STYLES ----------
 import "./HomePage.scss";
-import PhotoBubble from '../../components/PhotoBubble/PhotoBubble';
+// ----------------------------
+
 
 export default function HomePage() {
 
@@ -22,16 +25,10 @@ export default function HomePage() {
         photoList = photos;
     }
 
-    // console.log(photoList);
-    // console.log("Photo", photoList[0]);
-    // console.log("Photo2", photoList[1]);
 
     return (
         <section className="home">
             {/* <Header /> */}
-            {/* {photoList.filter((photo) => photo.id === 3).map((photo) => {
-                return <PhotoBubble key={photo.id} photo={photo} />;
-                })} */}
             <PhotoBubble photo={photoList[0]} />
             <Bio />
             <PhotoBubble photo={photoList[1]} />
@@ -40,7 +37,7 @@ export default function HomePage() {
             <Projects />
             <PhotoBubble photo={photoList[3]} />
             <PhotoBubble photo={photoList[4]} />
-            {/* <Footer /> */}
+            <Footer />
         </section>
     );
 }
