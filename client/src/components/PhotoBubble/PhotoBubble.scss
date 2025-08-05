@@ -4,21 +4,9 @@
 
 .photo-bubble {
   display: flex;
-  // flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-
-  // &__title {
-  //   justify-self: flex-start;
-  // }
-
-  // &__bubble {
-  //   padding: 1rem;
-  //   justify-self: center;
-  //   background-color: $bkgd-col;
-  //   border-radius: 0.625rem;
-  // }
 
   &__headshot {
     width: 100%;

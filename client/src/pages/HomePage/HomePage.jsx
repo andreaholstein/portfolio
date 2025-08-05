@@ -22,9 +22,9 @@ export default function HomePage() {
         photoList = photos;
     }
 
-    console.log(photoList);
-    console.log("Photo", photoList[0]);
-    console.log("Photo2", photoList[1]);
+    // console.log(photoList);
+    // console.log("Photo", photoList[0]);
+    // console.log("Photo2", photoList[1]);
 
     return (
         <section className="home">
@@ -37,7 +37,9 @@ export default function HomePage() {
             <PhotoBubble photo={photoList[1]} />
             <Demos />
             <PhotoBubble photo={photoList[2]} />
-            {/* <Projects /> */}
+            <Projects />
+            <PhotoBubble photo={photoList[3]} />
+            <PhotoBubble photo={photoList[4]} />
             {/* <Footer /> */}
         </section>
     );
