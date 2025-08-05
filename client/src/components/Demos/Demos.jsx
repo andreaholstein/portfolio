@@ -11,9 +11,18 @@ export default function Demos() {
         <section className="demos">
             <div className="demos__bubble">
                 {/* <h2 className="demos__title title">Demos</h2> */}
-                <iframe className="demos__video demo-reel" src="https://www.youtube.com/embed/GDnRQkjh5HI? si=FF7pMzk3W5mtXtEg" title="Andrea Holstein's Theatrical Demo Reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <iframe
-                    classname="demos__audio demo-reel"
+                    className="demos__video demo-reel"
+                    src="https://www.youtube.com/embed/GDnRQkjh5HI? si=FF7pMzk3W5mtXtEg"
+                    title="Andrea Holstein's Theatrical Demo Reel"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen>
+
+                </iframe>
+                <iframe
+                    className="demos__audio demo-reel"
                     title="Andrea Holstein's Commercial Voiceover Demo Reel"
                     frameborder="no"
                     allow="autoplay"

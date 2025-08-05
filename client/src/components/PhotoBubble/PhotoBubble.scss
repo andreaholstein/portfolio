@@ -1,0 +1,36 @@
+@use "../../styles/_partials/variables" as *;
+@use "../../styles/_partials/typography" as *;
+@use "../../styles/_partials/mixins" as *;
+
+.photo-bubble {
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  // &__title {
+  //   justify-self: flex-start;
+  // }
+
+  // &__bubble {
+  //   padding: 1rem;
+  //   justify-self: center;
+  //   background-color: $bkgd-col;
+  //   border-radius: 0.625rem;
+  // }
+
+  &__headshot {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__headshot--img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}

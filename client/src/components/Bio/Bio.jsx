@@ -9,9 +9,6 @@ export default function Bio() {
 
     return (
         <section className="bio">
-            <div className="bio__headshot">
-                <img src="src/assets/images/Andrea-Holstein_3.png" alt="Headshot of Andrea Holstein" className="bio__headshot--img" />
-            </div>
             <h2 className="bio__title title">Bio</h2>
             <div className="bio__bubble">
                 <p className="bio__blurb">Andrea Holstein is a Canadian actress and writer. Based out of Toronto.</p>

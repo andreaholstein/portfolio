@@ -1,6 +1,33 @@
 [
   {
-    "id": "22",
+    "id": 25,
+    "category": "other",
+    "title": "ACTRA Reel Talk Podcast",
+    "role": null,
+    "productionCompany": "ACTRA Toronto",
+    "venue": null,
+    "director": ["Director", "Co-Producer"]
+  },
+  {
+    "id": 24,
+    "category": "other",
+    "title": "Nespresso",
+    "role": "Barista",
+    "productionCompany": null,
+    "venue": null,
+    "director": ["Christina Cox"]
+  },
+  {
+    "id": 23,
+    "category": "other",
+    "title": "MEC Outdoors",
+    "role": "French Voiceover",
+    "productionCompany": "Ultravision Studios",
+    "venue": null,
+    "director": ["Rob Crenson"]
+  },
+  {
+    "id": 22,
     "category": "tv",
     "title": "Devil in Disguise: John Wayne Gacy",
     "role": "Reporter #2",
@@ -9,7 +36,7 @@
     "director": "Maggie Kiley"
   },
   {
-    "id": "21",
+    "id": 21,
     "category": "tv",
     "title": "Children Ruin Everything",
     "role": "Server",
@@ -18,7 +45,7 @@
     "director": "Melanie Orr"
   },
   {
-    "id": "20",
+    "id": 20,
     "category": "tv",
     "title": "Hello Again",
     "role": "Medic #2",
@@ -27,7 +54,7 @@
     "director": "Melanie Chung"
   },
   {
-    "id": "19",
+    "id": 19,
     "category": "tv",
     "title": "Dan Brown's The Lost Symbol",
     "role": "DCF Officer",
@@ -36,7 +63,7 @@
     "director": ["Felix Alcala", ", ", "Kate Woods"]
   },
   {
-    "id": "18",
+    "id": 18,
     "category": "film",
     "title": "Zoe's Having A Baby",
     "role": "Bonnie",
@@ -45,7 +72,7 @@
     "director": "Don McBrearty"
   },
   {
-    "id": "17",
+    "id": 17,
     "category": "film",
     "title": "Obsessed To Death",
     "role": "Anita",
@@ -54,7 +81,7 @@
     "director": "Stefan Brogren"
   },
   {
-    "id": "16",
+    "id": 16,
     "category": "film",
     "title": "Mine",
     "role": "Tech",
@@ -63,7 +90,7 @@
     "director": "Fiyin Coker"
   },
   {
-    "id": "15",
+    "id": 15,
     "category": "film",
     "title": "Bloom Room",
     "role": "Gertrude",
@@ -72,7 +99,7 @@
     "director": "Christian Anderson"
   },
   {
-    "id": "14",
+    "id": 14,
     "category": "film",
     "title": "Become the Wounded",
     "role": "Kate",
@@ -81,7 +108,7 @@
     "director": "Amir Zagara"
   },
   {
-    "id": "13",
+    "id": 13,
     "category": "film",
     "title": "Meet Me In The Hallway",
     "role": "Alex",
@@ -90,7 +117,7 @@
     "director": "Zachary Doolan"
   },
   {
-    "id": "12",
+    "id": 12,
     "category": "film",
     "title": "After the Tour",
     "role": "Steph",
@@ -99,7 +126,7 @@
     "director": "Dylan Liedtke"
   },
   {
-    "id": "11",
+    "id": 11,
     "category": "theatre",
     "title": "Puzzles",
     "role": "Gwen",
@@ -108,7 +135,7 @@
     "director": "Lisa Meuser"
   },
   {
-    "id": "10",
+    "id": 10,
     "category": "theatre",
     "title": "Patchface",
     "role": "Woman",
@@ -117,7 +144,7 @@
     "director": "Hailey Hill"
   },
   {
-    "id": "9",
+    "id": 9,
     "category": "theatre",
     "title": "Zoo Story",
     "role": ["Peter", ", ", "Jerry"],
@@ -126,7 +153,7 @@
     "director": "Dixie Seattle"
   },
   {
-    "id": "8",
+    "id": 8,
     "category": "theatre",
     "title": "Love and Information",
     "role": "(Multiple Roles)",
@@ -135,7 +162,7 @@
     "director": "Maria Ricossa"
   },
   {
-    "id": "7",
+    "id": 7,
     "category": "theatre",
     "title": "Because I Am Your Queen",
     "role": "Elizabeth I",
@@ -144,7 +171,7 @@
     "director": "Mina Samuels"
   },
   {
-    "id": "6",
+    "id": 6,
     "category": "theatre",
     "title": "Antigone",
     "role": "Antigone",
@@ -153,7 +180,7 @@
     "director": "Camille Intson"
   },
   {
-    "id": "5",
+    "id": 5,
     "category": "theatre",
     "title": "Women Beware Women",
     "role": ["Fabrizia", ", ", "Messenger", ", ", "Boy #1"],
@@ -162,7 +189,7 @@
     "director": "Jo Devereux"
   },
   {
-    "id": "4",
+    "id": 4,
     "category": "theatre",
     "title": "As You Like It",
     "role": ["Le Beau", ", ", "Martext", ", ", "2nd Page"],
@@ -171,7 +198,7 @@
     "director": "Jo Devereux"
   },
   {
-    "id": "3",
+    "id": 3,
     "category": "theatre",
     "title": "Simon The Brave!",
     "role": ["Villager #2", ", ", "Goblin #2"],
@@ -180,7 +207,7 @@
     "director": "Maddy Oliver"
   },
   {
-    "id": "2",
+    "id": 2,
     "category": "theatre",
     "title": "Doctor Faustus",
     "role": "Wagner",
@@ -189,7 +216,7 @@
     "director": "Jo Devereux"
   },
   {
-    "id": "1",
+    "id": 1,
     "category": "theatre",
     "title": "Twelfth Night",
     "role": ["Curio", ", ", "Lady to Olivia"],

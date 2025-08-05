@@ -15,7 +15,7 @@ export default function Projects() {
     let allProjects = [];
 
     if (!projects) {
-        return <div className="projects__loading">Loading Data...</div>
+        return <div className="projects__loading loading">Loading Data...</div>
     } else {
         allProjects = projects;
     }
