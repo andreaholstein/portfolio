@@ -41,7 +41,7 @@ export default function ContactForm() {
                 <textarea className="contact-form__textbox contact-form__item" name="message" required placeholder="Your message here ..."></textarea>
                 <button className="contact-form__button contact-form__item" type="submit">Submit Form</button>
             </form>
-            <span>{result}</span>
+            <span className="contact-form__result">{result}</span>
         </section>
     );
 }

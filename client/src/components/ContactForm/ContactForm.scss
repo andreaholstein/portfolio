@@ -40,16 +40,24 @@
     border: 0.125rem solid $light;
     border-radius: 1.25rem;
   }
+
+  &__button:hover {
+    background-color: $light;
+    color: $dark;
+  }
+
+  &__button:active {
+    background-color: $accent;
+    color: $light;
+  }
+
+  &__result {
+    margin-top: 1rem;
+    align-self: center;
+    font-size: 2rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: $light;
+    transition-duration: 2s;
+  }
 }
-
-// &__form-label--checkbox {
-//   margin-top: 2rem;
-//   display: flex;
-//   justify-content: center;
-//   color: $light;
-//   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-// }
-
-// &__contact-form-spam--hidden {
-//   display: none;
-// }
