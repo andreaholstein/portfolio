@@ -1,0 +1,55 @@
+@use "../../styles/_partials/variables" as *;
+@use "../../styles/_partials/typography" as *;
+@use "../../styles/_partials/mixins" as *;
+
+.contact-form {
+  margin: 1rem 0;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  &__form {
+    width: inherit;
+    // width: 45%; //tablet + desktop
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  &__input,
+  &__textbox {
+    margin-top: 1rem;
+    padding: 1rem 0.25rem;
+    font-size: 2rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    border: 0;
+    border-radius: 0.5rem;
+  }
+
+  &__textbox {
+    height: 8rem;
+  }
+
+  &__button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    width: max-content;
+    align-self: center;
+    border: 0.125rem solid $light;
+    border-radius: 1.25rem;
+  }
+}
+
+// &__form-label--checkbox {
+//   margin-top: 2rem;
+//   display: flex;
+//   justify-content: center;
+//   color: $light;
+//   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+// }
+
+// &__contact-form-spam--hidden {
+//   display: none;
+// }

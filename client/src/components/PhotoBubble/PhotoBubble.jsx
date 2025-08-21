@@ -10,7 +10,7 @@ export default function PhotoBubble({ photo }) {
         <div className="photo-bubble__loading loading">Loading Image...</div>
     }
 
-    console.log("howabout now?", photo);
+    // console.log("howabout now?", photo);
 
     return (
         <section className="photo-bubble">

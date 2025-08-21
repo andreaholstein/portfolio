@@ -28,7 +28,7 @@ export default function Projects() {
 
     // CIRCLE BACK TO THIS
     // ACTIVE HEADER
-    // const [isActiveHeader, setIsActiveHeader] = useState(null);
+    const [isActiveHeader, setIsActiveHeader] = useState(null);
     // logic feels like it's on the tip of my tongue, but trying to use this^ state to hold the active header value, and when the header loses this active status, need it to toggle itself off!
 
     // const oneAtATime = () => {
