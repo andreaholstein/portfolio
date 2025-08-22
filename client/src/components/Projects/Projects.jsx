@@ -8,7 +8,7 @@ import projects from "../../assets/data/resume.json"
 // ---------- STYLES ----------
 import "./Projects.scss";
 
-export default function Projects() {
+export default function Projects({ projects }) {
     // console.log(projects);
 
     // LOAD DATA
@@ -38,7 +38,7 @@ export default function Projects() {
     // }
 
     return (
-        <section className="projects">
+        <section className="projects" id="#projects" ref={projects}>
             <h2 className="projects__title">Projects</h2>
             <div className="projects__accordion">
                 <div className="projects__tv">

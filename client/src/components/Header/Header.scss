@@ -4,12 +4,15 @@
 
 .header {
   margin-bottom: 2rem;
-  padding-left: 0.5rem;
   height: max-content;
   width: 100%;
   display: flex;
   align-items: center;
   box-sizing: border-box;
+
+  &__title {
+    margin-left: 1rem;
+  }
 
   &__nav {
     // background-color: $bkgd-shade;
@@ -19,6 +22,10 @@
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+  }
+
+  &__nav-menu {
+    width: inherit;
   }
 
   &__horiz-wrap {
@@ -37,10 +44,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $bkgd-shade; // change in NavLinks.scss as well!
     border-radius: 0 0 0 1.25rem;
     box-sizing: border-box;
     &--active {
+      @extend .header__hamburger;
+      background-color: $bkgd-shade; // change in NavLinks.scss as well!
       border-radius: 0;
     }
   }

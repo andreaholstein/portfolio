@@ -3,7 +3,7 @@
 @use "../../styles/_partials/mixins" as *;
 
 .nav {
-  width: 100vw;
+  width: inherit;
   height: max-content;
   background-color: $bkgd-shade;
 
@@ -14,5 +14,11 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+  }
+
+  &__link-text {
+    width: 50%;
+    padding: 1rem 0;
+    border-bottom: 1px solid $light;
   }
 }

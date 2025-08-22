@@ -16,6 +16,10 @@
     align-items: stretch;
     box-sizing: border-box;
   }
+
+  &__video {
+    height: 25rem; // good on desktop + mobile
+  }
 }
 
 iframe {

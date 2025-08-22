@@ -14,7 +14,11 @@ import "./HomePage.scss";
 // ----------------------------
 
 
-export default function HomePage() {
+export default function HomePage({ bio, projects, contact }) {
+
+    // let bio = bio;
+    // let projects = projects;
+    // let contact = contact;
 
     // LOAD DATA
     let photoList = [];
@@ -25,19 +29,18 @@ export default function HomePage() {
         photoList = photos;
     }
 
-
     return (
         <section className="home">
             {/* <Header /> */}
             <PhotoBubble photo={photoList[0]} />
-            <Bio />
+            <Bio bio={bio} />
             <PhotoBubble photo={photoList[1]} />
             <Demos />
             <PhotoBubble photo={photoList[2]} />
-            <Projects />
+            <Projects projects={projects} />
             <PhotoBubble photo={photoList[3]} />
             <PhotoBubble photo={photoList[4]} />
-            <Footer />
+            <Footer contact={contact} />
         </section>
     );
 }
