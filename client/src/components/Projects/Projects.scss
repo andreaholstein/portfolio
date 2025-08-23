@@ -7,6 +7,14 @@
   padding: 2rem;
   width: inherit;
   background-color: $dark;
+  @include tablet {
+    margin: 5rem 0;
+    padding: 5rem 8rem;
+  }
+  @include desktop {
+    margin: 5rem 0;
+    padding: 5rem 15rem;
+  }
 
   &__title {
     border-bottom: 0.125rem solid $light;
@@ -15,6 +23,15 @@
   &__subtitle {
     padding-top: 1rem;
     border-bottom: 0.0625rem solid $light;
+    cursor: pointer;
+  }
+
+  &__subtitle:hover {
+    @extend .projects__subtitle;
+    font-weight: 500;
+    font-style: oblique;
+    color: white;
+    border-bottom: 0.125rem solid $light;
   }
 
   &__accordion {

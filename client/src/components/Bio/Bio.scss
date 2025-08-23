@@ -9,6 +9,14 @@
   flex-direction: column;
   box-sizing: border-box;
   background-color: $bkgd-col;
+  @include tablet {
+    margin: 5rem 0;
+    padding: 5rem 8rem;
+  }
+  @include desktop {
+    margin: 5rem 0;
+    padding: 5rem 15rem;
+  }
 
   &__title {
     justify-self: flex-start;
