@@ -16,6 +16,7 @@
     box-sizing: border-box;
   }
 
+  // REPRESENTATION LINE -------------
   &__contact-representatives {
     margin-top: 1rem;
   }
@@ -39,14 +40,26 @@
   &__contact-reps--link:active {
     color: $bkgd-col;
   }
+  // REPRESENTATION LINE ^^^^^^^^^^
 
+  // IMDB - LINKEDIN -------------
   &__contact-lists {
     padding: 1rem 0 3rem 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid $light;
+    box-sizing: border-box;
+    @include tablet {
+      padding-left: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      box-sizing: border-box;
+    }
+    @include desktop {
+    }
   }
 
   &__contact-list {
@@ -55,6 +68,12 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    @include tablet {
+      margin-bottom: 2rem;
+    }
+
+    @include desktop {
+    }
   }
 
   &__contact-list--link {
@@ -97,14 +116,17 @@
     margin-top: 0.5rem;
     font-size: 2rem;
   }
+  // IMDB - LINKEDIN ^^^^^^^^^^^^
 
+  // COPYRIGHT SECTION
   &__text-wrap {
     margin-top: 2rem;
-    padding: 0;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: 2px solid $light;
   }
 
   &__copyright {
@@ -117,4 +139,34 @@
     font-size: 1rem;
     font-family: "Gill Sans MT Condensed", "Outfit Medium", sans-serif;
   }
+
+  // TABLET - DESKTOP LAYOUT
+  &__tab-desk-wrap {
+    @include tablet {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: stretch;
+      box-sizing: border-box;
+    }
+    @include desktop {
+    }
+  }
+}
+
+// TABLET - DESKTOP LAYOUT - SECTIONS
+.tab-desk--1 {
+  @include tablet {
+    width: 80%;
+  }
+}
+@include desktop {
+}
+
+.tab-desk--2 {
+  @include tablet {
+    width: 20%;
+  }
+}
+@include desktop {
 }
