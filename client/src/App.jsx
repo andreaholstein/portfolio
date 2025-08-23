@@ -25,6 +25,14 @@ function App() {
     });
   };
 
+  // CHANGE HEADER BACKGROUND ON SCROLL
+  // const changeHeader = () => {
+  //   window.addEventListener("scroll", () => {
+  //     let scrollPosition = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+  //     document.documentElement.style.setProperty("--header-color", `rgb(${255 - scrollPosition * 255}, ${100 + scrollPosition * 100}, ${scrollPosition * 255})`);
+  //   });
+  // };
+
   return (
     <>
       <BrowserRouter>
@@ -35,6 +43,7 @@ function App() {
           projectsSection={projectsSection}
           contactSection={contactSection}
           scrollToSection={scrollToSection}
+
         />
         <Routes>
           <Route path="/" element={<HomePage bioSection={bioSection}

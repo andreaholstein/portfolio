@@ -3,6 +3,8 @@
 @use "../../styles/_partials/mixins" as *;
 
 .header {
+  // position: sticky; // revisit if I figure out how to make the background change to match!
+  // top: 0;
   margin-bottom: 2rem;
   height: max-content;
   width: 100%;
@@ -51,11 +53,10 @@
   }
 
   &__hamburger {
+    // position: sticky;
+    // top: 0;
     // position: fixed; // working, broke active background colouring
     // right: 0;
-    // need to close after li selected, blocks when scrolling back up to section
-    // just kinda ugly, maybe revisit in V2
-    // style tablet and desktop first and revist this!
     height: 4.5rem;
     width: 4.5rem;
     padding: 0.25rem;

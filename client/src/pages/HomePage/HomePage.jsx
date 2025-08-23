@@ -24,6 +24,7 @@ export default function HomePage({ bioSection, projectsSection, contactSection }
         photoList = photos;
     }
 
+
     return (
         <section className="home">
             {/* <Header /> */}
