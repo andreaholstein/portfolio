@@ -6,7 +6,7 @@ import { Link } from "react-router";
 // ---------- STYLES ----------
 import "./NavLinks.scss";
 
-export default function NavLinks({ bio, projects, contact, scrollToSection }) {
+export default function NavLinks({ bioSection, projectsSection, contactSection, scrollToSection }) {
     // TO DO: Update Links with actual pathways, ensure nav menu panel closes on click!\
     // MVP: No hamburger menu, all one page app?
 
@@ -14,13 +14,13 @@ export default function NavLinks({ bio, projects, contact, scrollToSection }) {
         <section className="nav">
             <ul className="nav__list">
                 {/* <a href="#bio" className="nav__link"> */}
-                <li className="nav__link-text" onClick={() => scrollToSection(bio)}>Bio</li>
+                <li className="nav__link" onClick={() => scrollToSection(bioSection)}><p className="nav__link-text">Bio</p></li>
                 {/* </a> */}
                 {/* <a href="#projects" className="nav__link"> */}
-                <li className="nav__link-text" onClick={() => scrollToSection(projects)}>Projects</li>
+                <li className="nav__link" onClick={() => scrollToSection(projectsSection)}><p className="nav__link-text">Projects</p></li>
                 {/* </a> */}
                 {/* <a href="#contact" className="nav__link"> */}
-                <li className="nav__link-text" onClick={() => scrollToSection(contact)}>Contact</li>
+                <li className="nav__link" onClick={() => scrollToSection(contactSection)}><p className="nav__link-text">Contact</p></li>
                 {/* </a> */}
                 {/* <li className="nav__link-text">Home</li> */}
             </ul>

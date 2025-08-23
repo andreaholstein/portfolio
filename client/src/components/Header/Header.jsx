@@ -5,7 +5,7 @@ import NavLinks from '../NavLinks/NavLinks';
 // ---------- STYLES ----------
 import "./Header.scss";
 
-export default function Header({ isPageMenuVisible, setIsPageMenuVisible, bio, projects, contact, scrollToSection }) {
+export default function Header({ isPageMenuVisible, setIsPageMenuVisible, bioSection, projectsSection, contactSection, scrollToSection }) {
 
     return (
         <section className="header">
@@ -13,7 +13,7 @@ export default function Header({ isPageMenuVisible, setIsPageMenuVisible, bio, p
             <nav className="header__nav">
                 <div className="header__horiz-wrap">
 
-                    <h1 className="header__title">Andrea Holstein</h1>
+                    <h1 className="header__title"><span className="header__span--1">Andrea</span><span className="header__span--2">Holstein</span> </h1>
                     <button onClick={() => {
                         setIsPageMenuVisible(!isPageMenuVisible)
                     }}
@@ -24,9 +24,9 @@ export default function Header({ isPageMenuVisible, setIsPageMenuVisible, bio, p
                 </div>
                 <div className="header__nav-menu">
                     {isPageMenuVisible && (
-                        <NavLinks bio={bio}
-                            projects={projects}
-                            contact={contact}
+                        <NavLinks bioSection={bioSection}
+                            projectsSection={projectsSection}
+                            contactSection={contactSection}
                             scrollToSection={scrollToSection} />
                     )}
                 </div>

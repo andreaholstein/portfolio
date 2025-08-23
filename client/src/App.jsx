@@ -14,9 +14,9 @@ function App() {
   const [isPageMenuVisible, setIsPageMenuVisible] = useState(false);
 
   // SCROLL FROM NAV TO SECTION
-  const bio = useRef(null)
-  const projects = useRef(null)
-  const contact = useRef(null)
+  const bioSection = useRef(null)
+  const projectsSection = useRef(null)
+  const contactSection = useRef(null)
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -31,15 +31,15 @@ function App() {
         <Header
           isPageMenuVisible={isPageMenuVisible}
           setIsPageMenuVisible={setIsPageMenuVisible}
-          bio={bio}
-          projects={projects}
-          contact={contact}
+          bioSection={bioSection}
+          projectsSection={projectsSection}
+          contactSection={contactSection}
           scrollToSection={scrollToSection}
         />
         <Routes>
-          <Route path="/" element={<HomePage bio={bio}
-            projects={projects}
-            contact={contact} />} />;
+          <Route path="/" element={<HomePage bioSection={bioSection}
+            projectsSection={projectsSection}
+            contactSection={contactSection} />} />;
         </Routes>
       </BrowserRouter>
     </>

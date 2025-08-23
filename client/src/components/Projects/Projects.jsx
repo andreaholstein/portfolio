@@ -8,7 +8,7 @@ import projects from "../../assets/data/resume.json"
 // ---------- STYLES ----------
 import "./Projects.scss";
 
-export default function Projects({ projects }) {
+export default function Projects({ projectsSection }) {
     // console.log(projects);
 
     // LOAD DATA
@@ -28,7 +28,7 @@ export default function Projects({ projects }) {
 
     // CIRCLE BACK TO THIS
     // ACTIVE HEADER
-    const [isActiveHeader, setIsActiveHeader] = useState(null);
+    // const [isActiveHeader, setIsActiveHeader] = useState(null);
     // logic feels like it's on the tip of my tongue, but trying to use this^ state to hold the active header value, and when the header loses this active status, need it to toggle itself off!
 
     // const oneAtATime = () => {
@@ -38,14 +38,14 @@ export default function Projects({ projects }) {
     // }
 
     return (
-        <section className="projects" id="#projects" ref={projects}>
-            <h2 className="projects__title">Projects</h2>
+        <section className="projects" id="#projects" ref={projectsSection}>
+            <h2 className="projects__title title">Projects</h2>
             <div className="projects__accordion">
                 <div className="projects__tv">
                     <button onClick={() => {
                         setIsShowTVProjects(!isShowTVProjects); setIsActiveHeader(isShowTVProjects);
                     }}
-                        className="tv__title projects__subtitle">Television</button>
+                        className="tv__title projects__subtitle subtitle">Television</button>
                     {isShowTVProjects && (
                         <div className="tv__credits">
                             <ul className="tv__credits-list">
@@ -60,7 +60,7 @@ export default function Projects({ projects }) {
                 <div className="projects__film">
                     <button onClick={() => {
                         setIsShowFilmProjects(!isShowFilmProjects); setIsActiveHeader(isShowFilmProjects);
-                    }} className="film__title projects__subtitle">Film</button>
+                    }} className="film__title projects__subtitle subtitle">Film</button>
                     {isShowFilmProjects && (
                         <div className="film__credits">
                             <ul className="film__credits-list">
@@ -74,7 +74,7 @@ export default function Projects({ projects }) {
                 <div className="projects__theatre">
                     <button onClick={() => {
                         setIsShowTheatreProjects(!isShowTheatreProjects); setIsActiveHeader(isShowTheatreProjects);
-                    }} className="theatre__title projects__subtitle">Theatre</button>
+                    }} className="theatre__title projects__subtitle subtitle">Theatre</button>
                     {isShowTheatreProjects && (
                         <div className="theatre__credits">
                             <ul className="theatre__credits-list">
@@ -88,7 +88,7 @@ export default function Projects({ projects }) {
                 <div className="projects__multimedia">
                     <button onClick={() => {
                         setIsShowOtherProjects(!isShowOtherProjects); setIsActiveHeader(isShowOtherProjects);
-                    }} className="multi__title projects__subtitle">Other Media</button>
+                    }} className="multi__title projects__subtitle subtitle">Other Media</button>
                     {isShowOtherProjects && (
                         <div className="other__credits">
                             <ul className="other__credits-list">

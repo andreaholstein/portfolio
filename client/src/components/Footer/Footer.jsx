@@ -5,10 +5,10 @@ import ContactForm from "../ContactForm/ContactForm";
 // ---------- STYLES ----------
 import "./Footer.scss";
 
-export default function Footer({ contact }) {
+export default function Footer({ contactSection }) {
 
     return (
-        <footer className="footer" id="#contact" ref={contact}>
+        <footer className="footer" id="#contact" ref={contactSection}>
             <div className="footer__contact">
                 <h2 className="footer__title title">Contact</h2>
                 <div className="footer__contact-representatives"><p className="footer__contact-reps--text">Andrea is represented by <a href="https://ncatalent.com/staff-directory" className="footer__contact-reps--link">Noble Caplan Abrams</a></p></div>
