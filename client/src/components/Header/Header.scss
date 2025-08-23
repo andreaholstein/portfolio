@@ -51,13 +51,17 @@
   }
 
   &__hamburger {
+    // position: fixed; // working, broke active background colouring
+    // right: 0;
+    // need to close after li selected, blocks when scrolling back up to section
+    // just kinda ugly, maybe revisit in V2
+    // style tablet and desktop first and revist this!
     height: 4.5rem;
     width: 4.5rem;
     padding: 0.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0 0 0 1.25rem;
     box-sizing: border-box;
     &--active {
       @extend .header__hamburger;
@@ -69,7 +73,6 @@
   &__hamburger-icon {
     height: inherit;
     width: inherit;
-    position: sticky; // not working
     cursor: pointer;
     fill: $accent;
   }

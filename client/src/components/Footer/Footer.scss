@@ -22,7 +22,7 @@
 
   &__contact-reps--link:link {
     font-size: 1.75rem;
-    font-family: "Outfit Medium", sans-serif;
+    font-family: "Franklin Gothic Demi", "Outfit Medium", sans-serif;
     color: $light;
     cursor: pointer;
   }
@@ -109,10 +109,12 @@
 
   &__copyright {
     font-size: 1.25rem;
+    font-family: "Gill Sans MT Condensed", "Outfit Medium", sans-serif;
     // line-height: 0;
   }
 
   &__patMyselfOnTheBack {
     font-size: 1rem;
+    font-family: "Gill Sans MT Condensed", "Outfit Medium", sans-serif;
   }
 }

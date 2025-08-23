@@ -3,6 +3,8 @@
 @use "../../styles/_partials/mixins" as *;
 
 .nav {
+  // position: fixed; // V2 - ooh, covers hero photo when set to fixed, keep but need to trigger to close when scroll begins! (otherwise stays sticky!!)
+  position: absolute; // maybe just fixed this ^^ with abso
   width: inherit;
   height: max-content;
   background-color: $bkgd-shade;
@@ -30,5 +32,9 @@
     font-style: oblique;
     color: white;
     border-bottom: 0.125rem solid $light;
+  }
+
+  &__link-text {
+    font-family: "Franklin Gothic Demi", "Outfit Medium", sans-serif;
   }
 }

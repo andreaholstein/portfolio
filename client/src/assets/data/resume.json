@@ -1,12 +1,21 @@
 [
   {
-    "id": 25,
+    "id": 26,
     "category": "other",
     "title": "ACTRA Reel Talk Podcast",
-    "role": null,
+    "role": ["Director", ", ", "Co-Producer"],
     "productionCompany": "ACTRA Toronto",
     "venue": null,
-    "director": ["Director", "Co-Producer"]
+    "director": "Andrea Holstein"
+  },
+  {
+    "id": 25,
+    "category": "other",
+    "title": "Southwest Airlines",
+    "role": "Theatregoer",
+    "productionCompany": ["Sparks", ", ", "Supply and Demand"],
+    "venue": null,
+    "director": "David Gray"
   },
   {
     "id": 24,

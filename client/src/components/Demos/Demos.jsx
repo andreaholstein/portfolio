@@ -10,7 +10,7 @@ export default function Demos() {
     return (
         <section className="demos">
             <div className="demos__bubble">
-                {/* <h2 className="demos__title title">Demos</h2> */}
+                <h2 className="demos__title--reel title">Theatrical Reel</h2>
                 <iframe
                     className="demos__video demo-reel"
                     src="https://www.youtube.com/embed/GDnRQkjh5HI? si=FF7pMzk3W5mtXtEg"
@@ -21,6 +21,7 @@ export default function Demos() {
                     allowFullScreen>
 
                 </iframe>
+                <h2 className="demos__title--voice title">Voiceover Reel</h2>
                 <iframe
                     className="demos__audio demo-reel"
                     title="Andrea Holstein's Commercial Voiceover Demo Reel"
