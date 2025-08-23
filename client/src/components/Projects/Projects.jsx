@@ -43,7 +43,8 @@ export default function Projects({ projectsSection }) {
             <div className="projects__accordion">
                 <div className="projects__tv">
                     <button onClick={() => {
-                        setIsShowTVProjects(!isShowTVProjects); setIsActiveHeader(isShowTVProjects);
+                        setIsShowTVProjects(!isShowTVProjects);
+                        // setIsShowTVProjects(!isShowTVProjects); setIsActiveHeader(isShowTVProjects);
                     }}
                         className="tv__title projects__subtitle subtitle">Television</button>
                     {isShowTVProjects && (
@@ -59,7 +60,8 @@ export default function Projects({ projectsSection }) {
                 </div>
                 <div className="projects__film">
                     <button onClick={() => {
-                        setIsShowFilmProjects(!isShowFilmProjects); setIsActiveHeader(isShowFilmProjects);
+                        setIsShowFilmProjects(!isShowFilmProjects);
+                        // setIsShowFilmProjects(!isShowFilmProjects); setIsActiveHeader(isShowFilmProjects);
                     }} className="film__title projects__subtitle subtitle">Film</button>
                     {isShowFilmProjects && (
                         <div className="film__credits">
@@ -73,7 +75,8 @@ export default function Projects({ projectsSection }) {
                 </div>
                 <div className="projects__theatre">
                     <button onClick={() => {
-                        setIsShowTheatreProjects(!isShowTheatreProjects); setIsActiveHeader(isShowTheatreProjects);
+                        setIsShowTheatreProjects(!isShowTheatreProjects);
+                        // setIsShowTheatreProjects(!isShowTheatreProjects); setIsActiveHeader(isShowTheatreProjects);
                     }} className="theatre__title projects__subtitle subtitle">Theatre</button>
                     {isShowTheatreProjects && (
                         <div className="theatre__credits">
@@ -87,7 +90,8 @@ export default function Projects({ projectsSection }) {
                 </div>
                 <div className="projects__multimedia">
                     <button onClick={() => {
-                        setIsShowOtherProjects(!isShowOtherProjects); setIsActiveHeader(isShowOtherProjects);
+                        setIsShowOtherProjects(!isShowOtherProjects);
+                        // setIsShowOtherProjects(!isShowOtherProjects); setIsActiveHeader(isShowOtherProjects);
                     }} className="multi__title projects__subtitle subtitle">Other Media</button>
                     {isShowOtherProjects && (
                         <div className="other__credits">

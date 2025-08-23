@@ -27,7 +27,9 @@ export default function Header({ isPageMenuVisible, setIsPageMenuVisible, bioSec
                         <NavLinks bioSection={bioSection}
                             projectsSection={projectsSection}
                             contactSection={contactSection}
-                            scrollToSection={scrollToSection} />
+                            scrollToSection={scrollToSection}
+                            setIsPageMenuVisible={setIsPageMenuVisible}
+                            isPageMenuVisible={isPageMenuVisible} />
                     )}
                 </div>
             </nav>
