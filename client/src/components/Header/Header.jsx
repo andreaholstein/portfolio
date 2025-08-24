@@ -1,5 +1,5 @@
 // ---------- FXNALITY ----------
-// import { useState } from 'react';
+import { useState, useEffect } from 'react';
 // ---------- COMPONENTS ----------
 import NavLinks from '../NavLinks/NavLinks';
 // ---------- STYLES ----------
@@ -7,12 +7,28 @@ import "./Header.scss";
 
 export default function Header({ isPageMenuVisible, setIsPageMenuVisible, bioSection, projectsSection, contactSection, scrollToSection }) {
 
+    // OPAQUE HEADER ON SCROLL - credit: https://codesandbox.io/p/sandbox/header-change-color-onscrolly-2z3vt
+    const [header, setHeader] = useState("header")
+
+    const listenScrollEvent = (event) => {
+        if (window.scrollY < 73) {
+            return setHeader("header")
+        } else if (window.scrollY > 70) {
+            return setHeader("header--sticky")
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', listenScrollEvent);
+
+        return () =>
+            window.removeEventListener('scroll', listenScrollEvent);
+    }, []);
+
     return (
-        <section className="header">
-            {/* MAYBE 86 NAV HERE */}
+        <section className={header}>
             <nav className="header__nav">
                 <div className="header__horiz-wrap">
-
                     <h1 className="header__title"><span className="header__span--1">Andrea</span><span className="header__span--2">Holstein</span> </h1>
                     <button onClick={() => {
                         setIsPageMenuVisible(!isPageMenuVisible)

@@ -3,14 +3,21 @@
 @use "../../styles/_partials/mixins" as *;
 
 .header {
-  // position: sticky; // revisit if I figure out how to make the background change to match!
-  // top: 0;
+  position: sticky; // revisit if I figure out how to make the background change to match!
+  top: 0;
   margin-bottom: 2rem;
   height: max-content;
   width: 100%;
   display: flex;
   align-items: center;
   box-sizing: border-box;
+  background-color: none;
+  transition: background-color 1000ms linear;
+  &--sticky {
+    @extend .header;
+    background-color: $bkgd-shade;
+    transition: background-color 1000ms linear;
+  }
 
   &__title {
     margin-left: 1rem;
@@ -53,10 +60,6 @@
   }
 
   &__hamburger {
-    // position: sticky;
-    // top: 0;
-    // position: fixed; // working, broke active background colouring
-    // right: 0;
     height: 4.5rem;
     width: 4.5rem;
     padding: 0.25rem;
@@ -90,13 +93,5 @@
     fill: $accent;
   }
 
-  // TO DO
-  //   &__hamburger-icon:hover path {
-  //     fill: $orange;
-  //   }
-
-  //   &__hamburger-icon:focus path {
-  //     fill: $orange;
-  //   }
   // cool transition between  - - - line hamburger full width and angled width
 }
