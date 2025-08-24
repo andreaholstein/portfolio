@@ -64,10 +64,11 @@
     align-items: center;
     box-sizing: border-box;
     @include tablet {
+      padding: 0;
       margin-right: 1rem;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
       box-sizing: border-box;
     }
@@ -80,7 +81,7 @@
     justify-content: space-between;
     align-items: center;
     @include tablet {
-      margin-bottom: 2rem;
+      // margin-bottom: 2rem;
     }
   }
 
@@ -95,10 +96,10 @@
   &__contact-list--icon {
     height: 4rem;
     @include tablet {
-      height: 4rem;
+      height: 3rem;
     }
     @include desktop {
-      height: 5rem;
+      height: 3rem;
     }
   }
 
