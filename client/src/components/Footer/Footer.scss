@@ -10,6 +10,14 @@
   flex-direction: column;
   box-sizing: border-box;
   background-color: $dark;
+  @include tablet {
+    margin-top: 5rem;
+    padding: 2rem 2rem;
+  }
+  @include desktop {
+    margin-top: 5rem;
+    padding: 2rem 4rem;
+  }
 
   &__contact {
     width: inherit;
@@ -18,7 +26,14 @@
 
   // REPRESENTATION LINE -------------
   &__contact-representatives {
-    margin-top: 1rem;
+    padding-top: 1rem;
+    box-sizing: border-box;
+    @include tablet {
+      padding: 1rem 0;
+    }
+    @include desktop {
+      padding: 2rem 0;
+    }
   }
 
   &__contact-reps--link:link {
@@ -51,15 +66,15 @@
     align-items: center;
     box-sizing: border-box;
     @include tablet {
-      padding-left: 5rem;
+      margin-right: 1rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: stretch;
+      align-items: center;
       box-sizing: border-box;
     }
-    @include desktop {
-    }
+    // @include desktop {
+    // }
   }
 
   &__contact-list {

@@ -16,9 +16,18 @@
   }
 
   &__headshot--img {
-    width: 250px;
-    height: 250px;
+    margin: 1.5rem 0;
+    width: 15.625rem;
+    height: 15.625rem;
     object-fit: cover;
     border-radius: 50%;
+    @include tablet {
+      width: 25rem;
+      height: 25rem;
+    }
+    @include desktop {
+      width: 31.25rem;
+      height: 31.25rem;
+    }
   }
 }

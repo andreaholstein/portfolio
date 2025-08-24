@@ -12,11 +12,11 @@
   align-items: center;
   box-sizing: border-box;
   background-color: none;
-  transition: background-color 1000ms linear;
+  transition: background-color 150ms linear;
   &--sticky {
     @extend .header;
     background-color: $bkgd-shade;
-    transition: background-color 1000ms linear;
+    transition: background-color 150ms linear;
   }
 
   &__title {
@@ -37,7 +37,6 @@
   }
 
   &__nav {
-    // background-color: $bkgd-shade;
     width: inherit;
     display: flex;
     flex-direction: column;
