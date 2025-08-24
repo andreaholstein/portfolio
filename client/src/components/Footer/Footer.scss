@@ -90,32 +90,41 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    fill: $accent;
-    color: $accent;
   }
 
   &__contact-list--icon {
-    height: 3rem;
+    height: 4rem;
+    @include tablet {
+      height: 4rem;
+    }
+    @include desktop {
+      height: 5rem;
+    }
   }
 
-  // Not working for whatever reason, maybe the reloads are failing me (see below)
-  &__contact-list--link:link * {
+  // MOUSE ACTIONS FOR SOCIAL ICONS
+  // &__contact-list--link:link * { // link only targets the a, doesn't target the icon!
+  //   color: $accent;
+  //   fill: $accent;
+  // }
+
+  &__contact-list--item * {
+    color: $light;
+    fill: $light;
+  }
+
+  &__contact-list--item:hover * {
     color: $accent;
     fill: $accent;
   }
 
-  // this is working, so not toying with it for the moment! (^^)
-  &__contact-list--link:hover * {
-    color: $light;
-    fill: $light;
-  }
+  // this one kills all the other styles!
+  // &__contact-list--item:visited * {
+  //   color: $light;
+  //   fill: $light;
+  // }
 
-  &__contact-list--link:visited * {
-    color: $light;
-    fill: $light;
-  }
-
-  &__contact-list--link:active * {
+  &__contact-list--item:active * {
     color: $bkgd-col;
     fill: $bkgd-col;
   }
