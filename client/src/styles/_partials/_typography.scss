@@ -17,17 +17,14 @@ h1 {
   font-family: "Outfit Medium", sans-serif;
   font-size: 2.75rem;
   line-height: 3rem;
-  //   font-weight: 400;
   @include tablet {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    // font-weight: 400;
+    font-size: 3rem;
+    line-height: 3.25rem;
   }
-  //   @include desktop {
-  //     font-size: 2.5rem;
-  //     line-height: 2.5rem;
-  //     // font-weight: 400;
-  //   }
+  @include desktop {
+    font-size: 4rem;
+    line-height: 4.25rem;
+  }
 }
 
 // HEADERS
@@ -35,23 +32,16 @@ h2 {
   margin: 0;
   color: $light;
   font-family: "Gill Sans MT Condensed", "Outfit Medium", sans-serif;
-  // font-family: "Outfit Medium", sans-serif;
-  font-size: 2.625rem;
-  line-height: 3.375rem;
-  //   font-weight: 300;
-  //   font-style: normal;
+  font-size: 3.625rem;
+  line-height: 4.375rem;
   @include tablet {
     font-size: 3.25rem;
     line-height: 4.125rem;
-    // font-weight: 300;
-    // font-style: normal;
   }
-  //   @include desktop {
-  //     font-size: 3.25rem;
-  //     line-height: 4.125rem;
-  //     // font-weight: 300;
-  //     // font-style: normal;
-  //   }
+  @include desktop {
+    font-size: 3.875rem;
+    line-height: 4.75rem;
+  }
 }
 
 // HEADERS - ALT COLOUR
@@ -59,23 +49,16 @@ h2 {
   margin: 0;
   color: $light;
   font-family: "Gill Sans MT Condensed", "Outfit Medium", sans-serif;
-  // font-family: "Outfit Medium", sans-serif;
   font-size: 2.625rem;
   line-height: 3.375rem;
-  //   font-weight: 300;
-  //   font-style: italic;
   @include tablet {
     font-size: 3.25rem;
     line-height: 4.125rem;
-    // font-weight: 300;
-    // font-style: italic;
   }
-  //   @include desktop {
-  //     font-size: 3.25rem;
-  //     line-height: 4.125rem;
-  //     // font-weight: 300;
-  //     // font-style: italic;
-  //   }
+  @include desktop {
+    font-size: 3.875rem;
+    line-height: 4.75rem;
+  }
 }
 
 // HEADING
@@ -83,23 +66,16 @@ h3 {
   margin: 0;
   color: $accent;
   font-family: "Gill Sans MT Condensed", "Outfit Medium", sans-serif;
-  // font-family: "Outfit Medium", sans-serif;
   font-size: 2.125rem;
   line-height: 2.4375rem;
-  // font-weight: 500;
-  // font-style: normal;
   @include tablet {
-    font-size: 1.5rem;
-    line-height: 1.875rem;
-    // font-weight: 500;
-    // font-style: normal;
+    font-size: 2.75rem;
+    line-height: 3.125rem;
   }
-  // @include desktop {
-  //   font-size: 1.5rem;
-  //   line-height: 1.875rem;
-  //   // font-weight: 500;
-  //   // font-style: normal;
-  // }
+  @include desktop {
+    font-size: 2.375rem;
+    line-height: 2.8125rem;
+  }
 }
 
 // BODY HEAD LIGHT
@@ -107,23 +83,16 @@ h4 {
   margin: 0;
   color: $light;
   font-family: "Gill Sans MT Condensed", "Outfit Medium", sans-serif;
-  // font-family: "Outfit Medium", sans-serif;
   font-size: 2.25rem;
   line-height: 1.9375rem;
-  // font-weight: 300;
-  // font-style: normal;
   @include tablet {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-    // font-weight: 300;
-    // font-style: normal;
+    font-size: 2.5rem;
+    line-height: 2.25rem;
   }
-  // @include desktop {
-  //   font-size: 1.25rem;
-  //   line-height: 1.625rem;
-  //   // font-weight: 300;
-  //   // font-style: normal;
-  // }
+  @include desktop {
+    font-size: 3.375rem;
+    line-height: 2.875rem;
+  }
 }
 
 // BODY COPY
@@ -131,45 +100,33 @@ p {
   margin: 0;
   color: $light;
   font-family: "Franklin Gothic Demi", "Outfit Medium", sans-serif;
-  // font-family: "Outfit Medium", sans-serif;
   font-size: 1.75rem;
   line-height: 1.9375rem;
-  //   font-weight: 500;
-  //   font-style: normal;
   @include tablet {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-    // font-weight: 500;
-    // font-style: normal;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
-  //   @include desktop {
-  //     font-size: 1.25rem;
-  //     line-height: 1.625rem;
-  //     // font-weight: 500;
-  //     // font-style: normal;
-  //   }
+  @include desktop {
+    font-size: 2.375rem;
+    line-height: 2.75rem;
+  }
 }
+
 // BODY COPY - ALT COLOUR
 .p--alt {
   margin: 0;
-  color: $dark;
-  font-family: "Franklin Gothic Demi", "Outfit Medium", sans-serif;
+  color: $light;
+  font-family: "Gill Sans MT Condensed", "Outfit Medium", sans-serif;
   font-size: 1.75rem;
   line-height: 1.9375rem;
-  //   font-weight: 500;
-  //   font-style: normal;
   @include tablet {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-    // font-weight: 500;
-    // font-style: normal;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
-  //   @include desktop {
-  //     font-size: 1.25rem;
-  //     line-height: 1.625rem;
-  //     // font-weight: 500;
-  //     // font-style: normal;
-  //   }
+  @include desktop {
+    font-size: 2.375rem;
+    line-height: 2.75rem;
+  }
 }
 
 // LINK
@@ -178,27 +135,31 @@ a {
   text-decoration: none;
   color: $light;
   font-family: "Franklin Gothic Demi", "Outfit Medium", sans-serif;
-  // font-family: "Outfit Medium", sans-serif;
   font-size: 1.75rem;
-  line-height: 0.9375;
-  // font-weight: 500;
-  // font-style: normal;
+  line-height: 1.9375rem;
   @include tablet {
-    font-size: 0.875rem;
-    line-height: 1.0938rem;
-    // font-weight: 500;
-    // font-style: normal;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
-  //   @include desktop {
-  //     font-size: 0.875rem;
-  //     line-height: 1.0938rem;
-  //     // font-weight: 500;
-  //     // font-style: normal;
-  //   }
+  @include desktop {
+    font-size: 2.375rem;
+    line-height: 2.75rem;
+  }
 }
 
+// PROJECTS
 .subtitle {
   font-family: "Gill Sans MT Condensed", "Outfit Medium", sans-serif;
+  font-size: 2.25rem;
+  line-height: 1.9375rem;
+  @include tablet {
+    font-size: 2.5rem;
+    line-height: 2.25rem;
+  }
+  @include desktop {
+    font-size: 3.375rem;
+    line-height: 2.875rem;
+  }
 }
 
 a:hover {

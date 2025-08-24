@@ -37,8 +37,6 @@
   }
 
   &__contact-reps--link:link {
-    font-size: 1.75rem;
-    font-family: "Franklin Gothic Demi", "Outfit Medium", sans-serif;
     color: $light;
     cursor: pointer;
   }
@@ -73,8 +71,6 @@
       align-items: center;
       box-sizing: border-box;
     }
-    // @include desktop {
-    // }
   }
 
   &__contact-list {
@@ -85,9 +81,6 @@
     align-items: center;
     @include tablet {
       margin-bottom: 2rem;
-    }
-
-    @include desktop {
     }
   }
 
@@ -105,13 +98,13 @@
     height: 3rem;
   }
 
-  // Not working for whatever reason, maybe the reloads are failing me
+  // Not working for whatever reason, maybe the reloads are failing me (see below)
   &__contact-list--link:link * {
     color: $accent;
     fill: $accent;
   }
 
-  // this is working so not toying with it for the moment!
+  // this is working, so not toying with it for the moment! (^^)
   &__contact-list--link:hover * {
     color: $light;
     fill: $light;
@@ -127,9 +120,8 @@
     fill: $bkgd-col;
   }
 
-  &__contact-list--title {
+  &__contact-list--social {
     margin-top: 0.5rem;
-    font-size: 2rem;
   }
   // IMDB - LINKEDIN ^^^^^^^^^^^^
 
@@ -141,18 +133,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid $light;
-  }
-
-  &__copyright {
-    font-size: 1.25rem;
-    font-family: "Gill Sans MT Condensed", "Outfit Medium", sans-serif;
-    // line-height: 0;
-  }
-
-  &__patMyselfOnTheBack {
-    font-size: 1rem;
-    font-family: "Gill Sans MT Condensed", "Outfit Medium", sans-serif;
+    border-top: 0.125rem solid $light;
   }
 
   // TABLET - DESKTOP LAYOUT
@@ -164,8 +145,6 @@
       align-items: stretch;
       box-sizing: border-box;
     }
-    @include desktop {
-    }
   }
 }
 
@@ -175,13 +154,9 @@
     width: 80%;
   }
 }
-@include desktop {
-}
 
 .tab-desk--2 {
   @include tablet {
     width: 20%;
   }
-}
-@include desktop {
 }

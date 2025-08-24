@@ -3,10 +3,9 @@
 @use "../../styles/_partials/mixins" as *;
 
 .header {
-  position: sticky; // revisit if I figure out how to make the background change to match!
+  position: sticky;
   top: 0;
   margin-bottom: 2rem;
-  height: max-content;
   width: 100%;
   display: flex;
   align-items: center;
@@ -19,22 +18,24 @@
     transition: background-color 150ms linear;
   }
 
+  // TITLE STYES ----------
   &__title {
     margin-left: 1rem;
   }
 
   &__span--1 {
-    font-size: 3.5rem;
     font-family: "Gill Sans MT Condensed", "Outfit Medium", sans-serif;
     font-weight: bold;
+    box-sizing: border-box;
   }
 
   &__span--2 {
     padding-left: 0.25rem;
-    font-size: 3.5rem;
     font-family: "Franklin Gothic Demi", "Outfit Medium", sans-serif;
     font-weight: bold;
+    box-sizing: border-box;
   }
+  // TITLE STYLES ^^^^^^^^^^
 
   &__nav {
     width: inherit;
@@ -50,6 +51,7 @@
   }
 
   &__horiz-wrap {
+    padding-left: 1rem;
     width: inherit;
     display: flex;
     flex-direction: row;

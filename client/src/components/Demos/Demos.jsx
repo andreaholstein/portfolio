@@ -1,7 +1,5 @@
 // ---------- FXNALITY ----------
-// import { useState, useEffect } from 'react'
 // ---------- COMPONENTS ----------
-
 // ---------- STYLES ----------
 import "./Demos.scss";
 

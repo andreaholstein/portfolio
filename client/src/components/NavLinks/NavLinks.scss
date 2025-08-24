@@ -3,8 +3,7 @@
 @use "../../styles/_partials/mixins" as *;
 
 .nav {
-  // position: fixed; // V2 - ooh, covers hero photo when set to fixed, keep but need to trigger to close when scroll begins! (otherwise stays sticky!!)
-  position: absolute; // maybe just fixed this ^^ with abso
+  position: absolute;
   width: inherit;
   height: max-content;
   background-color: $bkgd-shade;

@@ -1,8 +1,6 @@
 // ---------- FXNALITY ----------
-import { useState, useEffect } from 'react'
 // ---------- COMPONENTS ----------
 import Bio from '../../components/Bio/Bio';
-// import Header from '../../components/Header/Header';
 import Demos from '../../components/Demos/Demos';
 import PhotoBubble from '../../components/PhotoBubble/PhotoBubble';
 import Projects from '../../components/Projects/Projects';
@@ -27,7 +25,6 @@ export default function HomePage({ bioSection, projectsSection, contactSection }
 
     return (
         <section className="home">
-            {/* <Header /> */}
             <PhotoBubble photo={photoList[0]} />
             <Bio bioSection={bioSection} />
             <PhotoBubble photo={photoList[1]} />

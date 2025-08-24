@@ -1,11 +1,11 @@
 // ---------- FXNALITY ----------
-// import { Link } from "react-router";
 // ---------- COMPONENTS ----------
 // ---------- STYLES ----------
 import "./NavLinks.scss";
 
 export default function NavLinks({ bioSection, projectsSection, contactSection, scrollToSection, setIsPageMenuVisible, isPageMenuVisible }) {
-    // MVP: No hamburger menu, all one page app?
+    // V1: all one page app
+    // V2: add a "back to top" either in NavLinks or elsewhere on page
 
     return (
         <section className="nav">

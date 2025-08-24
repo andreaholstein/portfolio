@@ -1,6 +1,5 @@
 // ---------- FXNALITY ----------
-import { useState, useEffect } from 'react'
-import { Link } from "react-router";
+import { useState } from 'react'
 // ---------- COMPONENTS ----------
 import Project from '../Project/Project';
 // ---------- DATA ----------
@@ -9,8 +8,6 @@ import projects from "../../assets/data/resume.json"
 import "./Projects.scss";
 
 export default function Projects({ projectsSection }) {
-    // console.log(projects);
-
     // LOAD DATA
     let allProjects = [];
 
@@ -26,7 +23,7 @@ export default function Projects({ projectsSection }) {
     const [isShowTheatreProjects, setIsShowTheatreProjects] = useState(false);
     const [isShowOtherProjects, setIsShowOtherProjects] = useState(false);
 
-    // CIRCLE BACK TO THIS
+    // V2 - CIRCLE BACK TO THIS
     // ACTIVE HEADER
     // const [isActiveHeader, setIsActiveHeader] = useState(null);
     // logic feels like it's on the tip of my tongue, but trying to use this^ state to hold the active header value, and when the header loses this active status, need it to toggle itself off!
@@ -36,12 +33,13 @@ export default function Projects({ projectsSection }) {
     // if active header, great - show yourself
     // if not active header, hide/close
     // }
+    // revisit NavLinks onClick! same idea!
 
     return (
         <section className="projects" id="#projects" ref={projectsSection}>
             <h2 className="projects__title title">Projects</h2>
             <div className="projects__accordion">
-                <div className="projects__tv">
+                <div className="projects__tv projects__div">
                     <button onClick={() => {
                         setIsShowTVProjects(!isShowTVProjects);
                         // setIsShowTVProjects(!isShowTVProjects); setIsActiveHeader(isShowTVProjects);
@@ -58,7 +56,7 @@ export default function Projects({ projectsSection }) {
                     )}
 
                 </div>
-                <div className="projects__film">
+                <div className="projects__film projects__div">
                     <button onClick={() => {
                         setIsShowFilmProjects(!isShowFilmProjects);
                         // setIsShowFilmProjects(!isShowFilmProjects); setIsActiveHeader(isShowFilmProjects);
@@ -73,7 +71,7 @@ export default function Projects({ projectsSection }) {
                         </div>
                     )}
                 </div>
-                <div className="projects__theatre">
+                <div className="projects__theatre projects__div">
                     <button onClick={() => {
                         setIsShowTheatreProjects(!isShowTheatreProjects);
                         // setIsShowTheatreProjects(!isShowTheatreProjects); setIsActiveHeader(isShowTheatreProjects);
@@ -88,7 +86,7 @@ export default function Projects({ projectsSection }) {
                         </div>
                     )}
                 </div>
-                <div className="projects__multimedia">
+                <div className="projects__multimedia projects__div">
                     <button onClick={() => {
                         setIsShowOtherProjects(!isShowOtherProjects);
                         // setIsShowOtherProjects(!isShowOtherProjects); setIsActiveHeader(isShowOtherProjects);

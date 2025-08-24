@@ -16,6 +16,16 @@
     padding: 5rem 15rem;
   }
 
+  &__div {
+    padding-top: 1rem;
+    @include tablet {
+      padding-top: 1.5rem;
+    }
+    @include desktop {
+      padding-top: 2rem;
+    }
+  }
+
   &__title {
     border-bottom: 0.125rem solid $light;
   }

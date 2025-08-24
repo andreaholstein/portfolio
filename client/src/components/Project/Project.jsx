@@ -1,5 +1,4 @@
 // ---------- FXNALITY ----------
-// import { useState, useEffect } from 'react'
 // ---------- COMPONENTS ----------
 // ---------- STYLES ----------
 import "./Project.scss";
