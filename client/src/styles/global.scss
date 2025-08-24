@@ -2,3 +2,24 @@
 @use "./_partials/typography" as *;
 @use "./_partials/variables.scss" as *;
 @use "./_partials/mixins.scss" as *;
+
+.title {
+  padding-bottom: 1rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: $light;
+  font-family: "Outfit Medium", sans-serif;
+  font-size: 2rem; // Create mixin with font sizes ($mobile-font, $tablet-font, etc.)
+  cursor: pointer;
+  // if global.scss button design gets overwritten, update manually on Projects.jsx
+}

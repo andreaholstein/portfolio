@@ -1,0 +1,63 @@
+@use "../../styles/_partials/variables" as *;
+@use "../../styles/_partials/typography" as *;
+@use "../../styles/_partials/mixins" as *;
+
+.contact-form {
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  &__form {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  &__input,
+  &__textbox {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    border: 0;
+    border-radius: 0.5rem;
+  }
+
+  &__textbox {
+    height: 8rem;
+  }
+
+  &__button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    width: max-content;
+    align-self: center;
+    border: 0.125rem solid $light;
+    border-radius: 1.25rem;
+    font-family: "Gill Sans MT Condensed", "Outfit Medium", sans-serif;
+  }
+
+  &__button:hover {
+    background-color: $light;
+    color: $dark;
+  }
+
+  &__button:active {
+    background-color: $accent;
+    color: $light;
+  }
+
+  &__result {
+    margin-top: 1rem;
+    align-self: center;
+    font-size: 2rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: $light;
+    transition-duration: 2s;
+  }
+}

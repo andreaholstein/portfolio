@@ -1,0 +1,236 @@
+[
+  {
+    "id": 26,
+    "category": "other",
+    "title": "ACTRA Reel Talk Podcast",
+    "role": ["Director", ", ", "Co-Producer"],
+    "productionCompany": "ACTRA Toronto",
+    "venue": null,
+    "director": "Andrea Holstein"
+  },
+  {
+    "id": 25,
+    "category": "other",
+    "title": "Southwest Airlines",
+    "role": "Theatregoer",
+    "productionCompany": ["Sparks", ", ", "Supply and Demand"],
+    "venue": null,
+    "director": "David Gray"
+  },
+  {
+    "id": 24,
+    "category": "other",
+    "title": "Nespresso",
+    "role": "Barista",
+    "productionCompany": null,
+    "venue": null,
+    "director": ["Christina Cox"]
+  },
+  {
+    "id": 23,
+    "category": "other",
+    "title": "MEC Outdoors",
+    "role": "French Voiceover",
+    "productionCompany": "Ultravision Studios",
+    "venue": null,
+    "director": ["Rob Crenson"]
+  },
+  {
+    "id": 22,
+    "category": "tv",
+    "title": "Devil in Disguise: John Wayne Gacy",
+    "role": "Reporter #2",
+    "productionCompany": "Peacock",
+    "venue": null,
+    "director": "Maggie Kiley"
+  },
+  {
+    "id": 21,
+    "category": "tv",
+    "title": "Children Ruin Everything",
+    "role": "Server",
+    "productionCompany": "CTV",
+    "venue": null,
+    "director": "Melanie Orr"
+  },
+  {
+    "id": 20,
+    "category": "tv",
+    "title": "Hello Again",
+    "role": "Medic #2",
+    "productionCompany": ["CBC Gem", ", ", "100 Dragons"],
+    "venue": null,
+    "director": "Melanie Chung"
+  },
+  {
+    "id": 19,
+    "category": "tv",
+    "title": "Dan Brown's The Lost Symbol",
+    "role": "DCF Officer",
+    "productionCompany": ["CBS", ", ", "Universal"],
+    "venue": null,
+    "director": ["Felix Alcala", ", ", "Kate Woods"]
+  },
+  {
+    "id": 18,
+    "category": "film",
+    "title": "Zoe's Having A Baby",
+    "role": "Bonnie",
+    "productionCompany": "Reel One",
+    "venue": null,
+    "director": "Don McBrearty"
+  },
+  {
+    "id": 17,
+    "category": "film",
+    "title": "Obsessed To Death",
+    "role": "Anita",
+    "productionCompany": "NE Revenge Body Productions",
+    "venue": null,
+    "director": "Stefan Brogren"
+  },
+  {
+    "id": 16,
+    "category": "film",
+    "title": "Mine",
+    "role": "Tech",
+    "productionCompany": ["OYA", ", ", "SIRT"],
+    "venue": null,
+    "director": "Fiyin Coker"
+  },
+  {
+    "id": 15,
+    "category": "film",
+    "title": "Bloom Room",
+    "role": "Gertrude",
+    "productionCompany": "OYA",
+    "venue": null,
+    "director": "Christian Anderson"
+  },
+  {
+    "id": 14,
+    "category": "film",
+    "title": "Become the Wounded",
+    "role": "Kate",
+    "productionCompany": "Zagara Productions",
+    "venue": null,
+    "director": "Amir Zagara"
+  },
+  {
+    "id": 13,
+    "category": "film",
+    "title": "Meet Me In The Hallway",
+    "role": "Alex",
+    "productionCompany": "Humber FMTV",
+    "venue": null,
+    "director": "Zachary Doolan"
+  },
+  {
+    "id": 12,
+    "category": "film",
+    "title": "After the Tour",
+    "role": "Steph",
+    "productionCompany": "Humber FMTV",
+    "venue": null,
+    "director": "Dylan Liedtke"
+  },
+  {
+    "id": 11,
+    "category": "theatre",
+    "title": "Puzzles",
+    "role": "Gwen",
+    "productionCompany": "In Character Productions",
+    "venue": ["Alumnae Theatre", ", ", "Toronto Fringe"],
+    "director": "Lisa Meuser"
+  },
+  {
+    "id": 10,
+    "category": "theatre",
+    "title": "Patchface",
+    "role": "Woman",
+    "productionCompany": "Allswell Productions",
+    "venue": ["Palace Theatre", ", ", "Vancouver Fringe"],
+    "director": "Hailey Hill"
+  },
+  {
+    "id": 9,
+    "category": "theatre",
+    "title": "Zoo Story",
+    "role": ["Peter", ", ", "Jerry"],
+    "productionCompany": "Humber College AFTV",
+    "venue": "Humber College",
+    "director": "Dixie Seattle"
+  },
+  {
+    "id": 8,
+    "category": "theatre",
+    "title": "Love and Information",
+    "role": "(Multiple Roles)",
+    "productionCompany": "Humber College AFTV",
+    "venue": "Humber College",
+    "director": "Maria Ricossa"
+  },
+  {
+    "id": 7,
+    "category": "theatre",
+    "title": "Because I Am Your Queen",
+    "role": "Elizabeth I",
+    "productionCompany": "(Workshop)",
+    "venue": "UWO",
+    "director": "Mina Samuels"
+  },
+  {
+    "id": 6,
+    "category": "theatre",
+    "title": "Antigone",
+    "role": "Antigone",
+    "productionCompany": "A&H SPring Play",
+    "venue": "The Arts Project",
+    "director": "Camille Intson"
+  },
+  {
+    "id": 5,
+    "category": "theatre",
+    "title": "Women Beware Women",
+    "role": ["Fabrizia", ", ", "Messenger", ", ", "Boy #1"],
+    "productionCompany": "UWO",
+    "venue": "McManus Theatre",
+    "director": "Jo Devereux"
+  },
+  {
+    "id": 4,
+    "category": "theatre",
+    "title": "As You Like It",
+    "role": ["Le Beau", ", ", "Martext", ", ", "2nd Page"],
+    "productionCompany": "Summer Shakespeare",
+    "venue": "UWO",
+    "director": "Jo Devereux"
+  },
+  {
+    "id": 3,
+    "category": "theatre",
+    "title": "Simon The Brave!",
+    "role": ["Villager #2", ", ", "Goblin #2"],
+    "productionCompany": "Purple Shorts Festival",
+    "venue": "UWO",
+    "director": "Maddy Oliver"
+  },
+  {
+    "id": 2,
+    "category": "theatre",
+    "title": "Doctor Faustus",
+    "role": "Wagner",
+    "productionCompany": "UWO",
+    "venue": "McManus Theatre",
+    "director": "Jo Devereux"
+  },
+  {
+    "id": 1,
+    "category": "theatre",
+    "title": "Twelfth Night",
+    "role": ["Curio", ", ", "Lady to Olivia"],
+    "productionCompany": "Summer Shakespeare",
+    "venue": "UWO",
+    "director": "Jo Devereux"
+  }
+]

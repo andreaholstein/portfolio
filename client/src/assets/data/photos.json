@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "alt": "Headshot of Andrea Holstein",
+    "src": "../src/assets/images/Andrea-Holstein_3.png"
+  },
+  {
+    "id": 2,
+    "alt": "Headshot of Andrea Holstein",
+    "src": "../src/assets/images/Andrea-Holstein_1.png"
+  },
+  {
+    "id": 3,
+    "alt": "Headshot of Andrea Holstein",
+    "src": "../src/assets/images/AndreaHolstein_WW2.jpg"
+  },
+  {
+    "id": 4,
+    "alt": "Headshot of Andrea Holstein",
+    "src": "../src/assets/images/Andrea-Holstein_2.png"
+  },
+  {
+    "id": 5,
+    "alt": "Headshot of Andrea Holstein",
+    "src": "../src/assets/images/AndreaHolstein_WW1.jpg"
+  }
+]

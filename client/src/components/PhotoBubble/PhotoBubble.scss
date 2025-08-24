@@ -1,0 +1,33 @@
+@use "../../styles/_partials/variables" as *;
+@use "../../styles/_partials/typography" as *;
+@use "../../styles/_partials/mixins" as *;
+
+.photo-bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  &__headshot {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__headshot--img {
+    margin: 1.5rem 0;
+    width: 15.625rem;
+    height: 15.625rem;
+    object-fit: cover;
+    border-radius: 50%;
+    @include tablet {
+      width: 25rem;
+      height: 25rem;
+    }
+    @include desktop {
+      width: 31.25rem;
+      height: 31.25rem;
+    }
+  }
+}

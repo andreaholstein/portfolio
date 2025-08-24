@@ -1,0 +1,40 @@
+@use "../../styles/_partials/variables" as *;
+@use "../../styles/_partials/typography" as *;
+@use "../../styles/_partials/mixins" as *;
+
+.nav {
+  position: absolute;
+  width: inherit;
+  height: max-content;
+  background-color: $bkgd-shade;
+  box-sizing: border-box;
+
+  &__list {
+    padding: 1rem 0 2rem 0;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  &__link {
+    width: 50%;
+    padding: 1rem 0;
+    border-bottom: 0.0625rem solid $light;
+    cursor: pointer;
+  }
+
+  &__link:hover {
+    @extend .nav__link;
+    font-weight: 900;
+    font-style: oblique;
+    color: white;
+    border-bottom: 0.125rem solid $light;
+  }
+
+  &__link-text {
+    font-family: "Franklin Gothic Demi", "Outfit Medium", sans-serif;
+  }
+}

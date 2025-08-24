@@ -1,0 +1,29 @@
+@use "../../styles/_partials/variables" as *;
+@use "../../styles/_partials/typography" as *;
+@use "../../styles/_partials/mixins" as *;
+
+.bio {
+  margin: 2rem 0;
+  padding: 2rem 2rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: $bkgd-col;
+  @include tablet {
+    margin: 5rem 0;
+    padding: 5rem 8rem;
+  }
+  @include desktop {
+    margin: 5rem 0;
+    padding: 5rem 15rem;
+  }
+
+  &__title {
+    justify-self: flex-start;
+  }
+
+  &__bubble {
+    justify-self: center;
+    border-radius: 0.625rem;
+  }
+}

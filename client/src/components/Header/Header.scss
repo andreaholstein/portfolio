@@ -1,0 +1,98 @@
+@use "../../styles/_partials/variables" as *;
+@use "../../styles/_partials/typography" as *;
+@use "../../styles/_partials/mixins" as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: none;
+  transition: background-color 150ms linear;
+  &--sticky {
+    @extend .header;
+    background-color: $bkgd-shade;
+    transition: background-color 150ms linear;
+  }
+
+  // TITLE STYES ----------
+  &__title {
+    margin-left: 1rem;
+  }
+
+  &__span--1 {
+    font-family: "Gill Sans MT Condensed", "Outfit Medium", sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+
+  &__span--2 {
+    padding-left: 0.25rem;
+    font-family: "Franklin Gothic Demi", "Outfit Medium", sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+  // TITLE STYLES ^^^^^^^^^^
+
+  &__nav {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  &__nav-menu {
+    width: inherit;
+  }
+
+  &__horiz-wrap {
+    padding-left: 1rem;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  &__hamburger {
+    height: 4.5rem;
+    width: 4.5rem;
+    padding: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    &--active {
+      @extend .header__hamburger;
+      background-color: $bkgd-shade; // change in NavLinks.scss as well!
+      border-radius: 0;
+    }
+  }
+
+  &__hamburger-icon {
+    height: inherit;
+    width: inherit;
+    cursor: pointer;
+    fill: $accent;
+  }
+
+  &__hamburger-icon path {
+    fill: $light;
+  }
+
+  &__hamburger-icon:active path {
+    fill: $accent;
+  }
+
+  &__hamburger-icon:active path {
+    fill: $accent;
+  }
+
+  // cool transition between  - - - line hamburger full width and angled width
+}

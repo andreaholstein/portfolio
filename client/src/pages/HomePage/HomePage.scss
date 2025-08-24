@@ -1,0 +1,11 @@
+@use "../../styles/_partials/variables" as *;
+@use "../../styles/_partials/typography" as *;
+@use "../../styles/_partials/mixins" as *;
+
+.home {
+  margin: 0;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}

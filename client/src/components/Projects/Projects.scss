@@ -1,0 +1,58 @@
+@use "../../styles/_partials/variables" as *;
+@use "../../styles/_partials/typography" as *;
+@use "../../styles/_partials/mixins" as *;
+
+.projects {
+  margin: 2rem 0;
+  padding: 2rem;
+  width: inherit;
+  background-color: $dark;
+  @include tablet {
+    margin: 5rem 0;
+    padding: 5rem 8rem;
+  }
+  @include desktop {
+    margin: 5rem 0;
+    padding: 5rem 15rem;
+  }
+
+  &__div {
+    padding-top: 1rem;
+    @include tablet {
+      padding-top: 1.5rem;
+    }
+    @include desktop {
+      padding-top: 2rem;
+    }
+  }
+
+  &__title {
+    border-bottom: 0.125rem solid $light;
+  }
+
+  &__subtitle {
+    padding-top: 1rem;
+    border-bottom: 0.0625rem solid $light;
+    cursor: pointer;
+  }
+
+  &__subtitle:hover {
+    @extend .projects__subtitle;
+    font-weight: 500;
+    font-style: oblique;
+    color: white;
+    border-bottom: 0.125rem solid $light;
+  }
+
+  &__accordion {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+button {
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  // if global.scss button design gets overwritten, update manually here
+}
