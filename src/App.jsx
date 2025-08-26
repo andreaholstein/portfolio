@@ -1,6 +1,6 @@
 // ---------- FXNALITY ----------
 import { useState, useRef } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+// import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // ---------- COMPONENTS ----------
 import Header from './components/Header/Header';
 // ---------- PAGES ----------
@@ -35,22 +35,17 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
-        <Header
-          isPageMenuVisible={isPageMenuVisible}
-          setIsPageMenuVisible={setIsPageMenuVisible}
-          bioSection={bioSection}
-          projectsSection={projectsSection}
-          contactSection={contactSection}
-          scrollToSection={scrollToSection}
-
-        />
-        <Routes>
-          <Route path="/" element={<HomePage bioSection={bioSection}
-            projectsSection={projectsSection}
-            contactSection={contactSection} />} />;
-        </Routes>
-      </BrowserRouter>
+      <Header
+        isPageMenuVisible={isPageMenuVisible}
+        setIsPageMenuVisible={setIsPageMenuVisible}
+        bioSection={bioSection}
+        projectsSection={projectsSection}
+        contactSection={contactSection}
+        scrollToSection={scrollToSection}
+      />
+      <HomePage bioSection={bioSection}
+        projectsSection={projectsSection}
+        contactSection={contactSection} />
     </>
   )
 }
